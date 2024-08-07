@@ -1,0 +1,34 @@
+import TextTransition, { presets } from 'react-text-transition';
+import { useState, useEffect } from 'react';
+import { Socials } from './Socials';
+
+export function HomeIntro({ datas }) {
+	const TEXTS = ['javaScript app', 'Golang app', 'AWS & cloud app', 'wordpress site'];
+	const [index, setIndex] = useState(0);
+	useEffect(() => {
+		const intervalId = setInterval(() => setIndex((index) => index + 1), 2500);
+		return () => clearTimeout(intervalId);
+	}, []);
+
+	return (
+		<>
+			<div className='container mt-10'>
+				<h1 className=''>
+					{' '}
+					i make
+					<span className='px-1.5 text-lightblue font-space'>
+						<TextTransition direction='down' inline='true' springConfig={presets.gentle}>
+							{TEXTS[index % TEXTS.length]}
+						</TextTransition>
+						s,
+					</span>
+					<br></br>
+					and dabble in the devOps realm.
+				</h1>
+				<h2 className='my-2'>{datas.description}</h2>
+				<h2>{datas.cta}</h2>
+			</div>
+			<Socials />
+		</>
+	);
+}

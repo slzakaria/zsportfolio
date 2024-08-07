@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	html {
+		overflow-x: hidden;
+		scroll-behavior: smooth;
+		background-color: #111010;
+		background-image: url('../../public/paper.png');
+	}
+}
+
+@layer utilities {
+	.text-balance {
+		text-wrap: balance;
+	}
+}
