@@ -1,6 +1,5 @@
 import TextTransition, { presets } from 'react-text-transition';
 import { useState, useEffect } from 'react';
-import { Socials } from './Socials';
 
 export function HomeIntro({ datas }) {
 	const TEXTS = ['javaScript app', 'Golang app', 'AWS & cloud app', 'wordpress site'];
@@ -12,11 +11,10 @@ export function HomeIntro({ datas }) {
 
 	return (
 		<>
-			<div className='container mt-10'>
-				<h1 className=''>
-					{' '}
+			<div className='container font-heebo mt-10'>
+				<h1>
 					i make
-					<span className='px-1.5 text-lightblue font-space'>
+					<span className='px-1.5 text-lightblue font-jetBrain'>
 						<TextTransition direction='down' inline='true' springConfig={presets.gentle}>
 							{TEXTS[index % TEXTS.length]}
 						</TextTransition>
@@ -25,10 +23,9 @@ export function HomeIntro({ datas }) {
 					<br></br>
 					and dabble in the devOps realm.
 				</h1>
-				<h2 className='my-2'>{datas.description}</h2>
-				<h2>{datas.cta}</h2>
+				<h2 className='my-2 text-slate-300'>{datas.description}</h2>
+				<h2 className='text-slate-300'>{datas.cta}</h2>
 			</div>
-			<Socials />
 		</>
 	);
 }

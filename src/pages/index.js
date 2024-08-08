@@ -1,5 +1,7 @@
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { HomeIntro } from '@/components/HomeIntro';
+import { Socials } from '@/components/ui/Socials';
+import { Projects } from '@/components/data/Projects';
 import siteData from '../data/siteData';
 import SEO from '../data/seo';
 
@@ -16,6 +18,8 @@ export default function Home() {
 				</Helmet>
 
 				<HomeIntro datas={siteData.homePage} />
+				<Socials />
+				<Projects />
 			</HelmetProvider>
 		</>
 	);

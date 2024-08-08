@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 import typography from '@tailwindcss/typography';
+import { transform } from 'next/dist/build/swc';
 module.exports = {
 	darkMode: 'class',
 	content: [
@@ -10,10 +11,12 @@ module.exports = {
 	theme: {
 		extend: {
 			animation: {
-				'bounce-slow': 'bounce 3s linear infinite',
+				flash: 'pulse 2s linear infinite',
 			},
 			fontFamily: {
 				space: ['Space Mono', 'monospace', 'cursive'],
+				jetBrain: ['JetBrains Mono', 'monospace', 'cursive'],
+				heebo: ['Heebo', 'sans-serif'],
 			},
 			colors: {
 				lightblue: '#06bee1',

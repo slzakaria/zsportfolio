@@ -7,6 +7,10 @@ const nextConfig = {
 	poweredByHeader: false,
 	output: 'standalone',
 	reactStrictMode: true,
+	devIndicators: {
+		buildActivity: true,
+		buildActivityPosition: 'bottom-right',
+	},
 };
 
 export default nextConfig;

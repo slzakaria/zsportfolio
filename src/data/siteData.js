@@ -89,7 +89,7 @@ const siteData = {
 	projects: [
 		{
 			id: uid(),
-			title: 'Go Docker api starter',
+			title: 'Golang-Docker api template',
 			description: 'Basic starter of a Go API microservice dockerized',
 			linkText: 'View Project',
 			link: 'https://github.com/Zackaria-Slimane/go-docker-ms',
@@ -97,7 +97,7 @@ const siteData = {
 		},
 		{
 			id: uid(),
-			title: 'Terraform AWS starter',
+			title: 'Terraform AWS template',
 			description: 'Provisioning starter for AWS resources using Terraform',
 			linkText: 'View Project',
 			link: 'https://github.com/Zackaria-Slimane/terraform-ec2',
@@ -105,7 +105,7 @@ const siteData = {
 		},
 		{
 			id: uid(),
-			title: 'Penny sense - budgeting app',
+			title: 'Pennysense - budgeting app',
 			description: 'Personal finance and budgeting app',
 			linkText: 'View Project',
 			link: 'https://pennysense.vercel.app/',
@@ -113,7 +113,7 @@ const siteData = {
 		},
 		{
 			id: uid(),
-			title: 'unFetch - Search image wrapper',
+			title: 'unFetch - image provider',
 			description: 'Search image wrapper , list and download high res images',
 			linkText: 'View Project',
 			link: 'https://unfetch.vercel.app/',
@@ -121,7 +121,7 @@ const siteData = {
 		},
 		{
 			id: uid(),
-			title: 'SaaS product Landing page',
+			title: 'SaaS product Template',
 			description: 'Landing page for a SaaS product',
 			linkText: 'View Project',
 			link: 'https://formifi.vercel.app/',
@@ -129,7 +129,7 @@ const siteData = {
 		},
 		{
 			id: uid(),
-			title: 'Echelon - Landing Page',
+			title: 'Bank product - Template',
 			description: 'Responsive & modern landing page for a Bank',
 			linkText: 'View Project',
 			link: 'https://echelonbank.vercel.app/',
@@ -137,7 +137,7 @@ const siteData = {
 		},
 		{
 			id: uid(),
-			title: 'Cv forge',
+			title: 'Cvforge - A resume maker',
 			description: 'A resume maker based on a professionnal template.',
 			linkText: 'View Project',
 			link: 'https://cvforge.vercel.app/',
@@ -145,7 +145,7 @@ const siteData = {
 		},
 		{
 			id: uid(),
-			title: 'Go CLI notes app',
+			title: 'Golang CLI notes',
 			description: 'Golang CLI tasks application',
 			linkText: 'View Project',
 			link: 'https://github.com/Zackaria-Slimane/gotask',
@@ -153,7 +153,7 @@ const siteData = {
 		},
 		{
 			id: uid(),
-			title: 'Git tracker - open issues tracker',
+			title: 'Gittrackr - open issues tracker',
 			description: 'A docker GoLang REST API with React front',
 			linkText: 'View Project',
 			link: 'https://gittrackr.vercel.app/',
@@ -161,7 +161,15 @@ const siteData = {
 		},
 		{
 			id: uid(),
-			title: 'BeautyMall',
+			title: 'Urban Drugstore - beauty ecommerce',
+			description: 'E-commerce website  - online beauty and drugstore',
+			linkText: 'View Project',
+			link: 'https://urbandrugstore.ma/',
+			featured: false,
+		},
+		{
+			id: uid(),
+			title: 'BeautyMall - beauty ecommerce',
 			description: 'E-commerce website  - online beauty and drugstore',
 			linkText: 'View Project',
 			link: 'https://beautymall.ma/',

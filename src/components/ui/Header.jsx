@@ -1,12 +1,12 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import profile from '../assets/logos/zs.png';
+import profile from '@/assets/logos/profile.jpg';
 
 export function Header({ active, setPath }) {
 	const pages = ['/', '/about', '/projects', '/articles', '/contact'];
 	return (
 		<>
-			<header className='container flex justify-between'>
+			<header className='container flex justify-between font-heebo'>
 				<div className='flex gap-2'>
 					<Image
 						src={profile}
@@ -21,7 +21,7 @@ export function Header({ active, setPath }) {
 						<span className='text-sm text-gray-500'>@zakariaslimane</span>
 					</div>
 				</div>
-				<nav className='flex items-center'>
+				<nav className='flex items-center font-jetBrain'>
 					<ul className='flex gap-5'>
 						{pages.map((page) => (
 							<li key={page}>
