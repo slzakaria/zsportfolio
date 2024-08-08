@@ -2,7 +2,7 @@ let uid = () => crypto.randomUUID().slice(0, 18);
 export const WorkStore = [
 	{
 		id: uid(),
-		name: 'CPLnetwork',
+		name: 'CPL network',
 		position: 'Frontend Developer',
 		from: 'January 2024',
 		to: 'Current',
@@ -12,7 +12,7 @@ export const WorkStore = [
 		id: uid(),
 		name: 'Nuitee Travel api',
 		position: 'Fullstack Developer',
-		from: 'October 2022',
+		from: 'October 2023',
 		to: 'January 2024',
 		link: 'https://nuitee.com',
 	},

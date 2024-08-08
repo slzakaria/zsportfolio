@@ -14,9 +14,8 @@ module.exports = {
 				flash: 'pulse 2s linear infinite',
 			},
 			fontFamily: {
-				space: ['Space Mono', 'monospace', 'cursive'],
 				jetBrain: ['JetBrains Mono', 'monospace', 'cursive'],
-				heebo: ['Heebo', 'sans-serif'],
+				cousine: ['Cousine', 'sans-serif'],
 			},
 			colors: {
 				lightblue: '#06bee1',

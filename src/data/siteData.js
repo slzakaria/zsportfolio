@@ -89,7 +89,7 @@ const siteData = {
 	projects: [
 		{
 			id: uid(),
-			title: 'Golang-Docker api template',
+			title: 'Golang api template',
 			description: 'Basic starter of a Go API microservice dockerized',
 			linkText: 'View Project',
 			link: 'https://github.com/Zackaria-Slimane/go-docker-ms',
@@ -105,7 +105,7 @@ const siteData = {
 		},
 		{
 			id: uid(),
-			title: 'Pennysense - budgeting app',
+			title: 'Pennysense Budget app',
 			description: 'Personal finance and budgeting app',
 			linkText: 'View Project',
 			link: 'https://pennysense.vercel.app/',
@@ -113,7 +113,7 @@ const siteData = {
 		},
 		{
 			id: uid(),
-			title: 'unFetch - image provider',
+			title: 'unFetch image provider',
 			description: 'Search image wrapper , list and download high res images',
 			linkText: 'View Project',
 			link: 'https://unfetch.vercel.app/',
@@ -129,7 +129,7 @@ const siteData = {
 		},
 		{
 			id: uid(),
-			title: 'Bank product - Template',
+			title: 'Bank product template',
 			description: 'Responsive & modern landing page for a Bank',
 			linkText: 'View Project',
 			link: 'https://echelonbank.vercel.app/',
@@ -137,7 +137,7 @@ const siteData = {
 		},
 		{
 			id: uid(),
-			title: 'Cvforge - A resume maker',
+			title: 'Cvforge resume maker',
 			description: 'A resume maker based on a professionnal template.',
 			linkText: 'View Project',
 			link: 'https://cvforge.vercel.app/',
@@ -153,7 +153,7 @@ const siteData = {
 		},
 		{
 			id: uid(),
-			title: 'Gittrackr - open issues tracker',
+			title: 'Gittrackr issues tracker',
 			description: 'A docker GoLang REST API with React front',
 			linkText: 'View Project',
 			link: 'https://gittrackr.vercel.app/',
@@ -161,7 +161,7 @@ const siteData = {
 		},
 		{
 			id: uid(),
-			title: 'Urban Drugstore - beauty ecommerce',
+			title: 'Urbandrugstore beauty ecommerce',
 			description: 'E-commerce website  - online beauty and drugstore',
 			linkText: 'View Project',
 			link: 'https://urbandrugstore.ma/',
@@ -169,7 +169,7 @@ const siteData = {
 		},
 		{
 			id: uid(),
-			title: 'BeautyMall - beauty ecommerce',
+			title: 'BeautyMall beauty ecommerce',
 			description: 'E-commerce website  - online beauty and drugstore',
 			linkText: 'View Project',
 			link: 'https://beautymall.ma/',

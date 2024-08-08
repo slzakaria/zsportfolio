@@ -3,10 +3,10 @@ import Link from 'next/link';
 import profile from '@/assets/logos/profile.jpg';
 
 export function Header({ active, setPath }) {
-	const pages = ['/', '/about', '/projects', '/articles', '/contact'];
+	const pages = ['/', '/projects', '/articles', '/contact'];
 	return (
 		<>
-			<header className='container flex justify-between font-heebo'>
+			<header className='container flex flex-col-reverse gap-5 sm:flex-row sm:gap-0 items-center justify-between font-cousine'>
 				<div className='flex gap-2'>
 					<Image
 						src={profile}
@@ -16,19 +16,19 @@ export function Header({ active, setPath }) {
 						width={50}
 						height={50}
 					/>
-					<div className='min-h-[50px] flex flex-col items-start justify-center'>
-						<h1 className='text-base font-bold'>zs</h1>
-						<span className='text-sm text-gray-500'>@zakariaslimane</span>
+					<div className='min-h-[50px] flex flex-col items-start justify-center text-xs'>
+						<h1 className='font-bold'>zs</h1>
+						<span className='text-gray-500'>@zakariaslimane</span>
 					</div>
 				</div>
 				<nav className='flex items-center font-jetBrain'>
-					<ul className='flex gap-5'>
+					<ul className='flex gap-3'>
 						{pages.map((page) => (
 							<li key={page}>
 								<Link
 									onClick={() => setPath(page)}
 									href={page}
-									className='font-space text-sm hover:underline underline-offset-4 decoration-wavy decoration-lightblue'>
+									className='font-jetBrain text-sm hover:underline hover:text-lightblue underline-offset-4 decoration-dashed decoration-lightblue'>
 									{page === '/' ? '~/' : page}
 								</Link>
 							</li>

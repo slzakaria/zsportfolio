@@ -11,7 +11,7 @@ export function HomeIntro({ datas }) {
 
 	return (
 		<>
-			<div className='container font-heebo mt-10'>
+			<div className='container font-cousine mt-10'>
 				<h1>
 					i make
 					<span className='px-1.5 text-lightblue font-jetBrain'>
