@@ -13,12 +13,12 @@ export function Footer() {
 				<div className='flex items-center justify-between gap-6 mt-2'>
 					<div>
 						<Link href={siteData.socials.github} target='_blank' rel='noreferrer noopener'>
-							<FiGithub className='text-sm hover:text-lightblue hover:scale-110' />
+							<FiGithub className='text-sm hover:text-limes hover:scale-110' />
 						</Link>
 					</div>
 					<div>
 						<Link href={siteData.socials.linkedin} target='_blank' rel='noreferrer noopener'>
-							<FiLinkedin className='text-sm hover:text-lightblue hover:scale-110' />
+							<FiLinkedin className='text-sm hover:text-limes hover:scale-110' />
 						</Link>
 					</div>
 					<div>
@@ -26,7 +26,7 @@ export function Footer() {
 							href={`mailto:${siteData.socials.email}`}
 							target='_blank'
 							rel='noreferrer noopener'>
-							<FiMail className='text-sm hover:text-lightblue hover:scale-110' />
+							<FiMail className='text-sm hover:text-limes hover:scale-110' />
 						</Link>
 					</div>
 				</div>

@@ -11,10 +11,10 @@ export function Articles() {
 				{articles.map((article) => (
 					<li key={article.id} className='group font-cousine'>
 						<Link target='_blank' href={article.link} className='flex gap-5 items-center'>
-							<span className='w-full text-sm text-slate-400 group-hover:text-white group-hover:underline decoration-dashed decoration-lightblue'>
+							<span className='w-full text-sm text-slate-400 group-hover:text-white group-hover:underline decoration-dashed decoration-limes'>
 								{article.title}
 							</span>
-							<FiChevronsRight className='w-4 h-4 cursor-pointer animate-flash group-hover:text-lightblue' />
+							<FiChevronsRight className='w-4 h-4 cursor-pointer animate-flash group-hover:text-limes' />
 						</Link>
 					</li>
 				))}

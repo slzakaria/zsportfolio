@@ -11,11 +11,11 @@ export function Projects() {
 				{projects.map((project) => (
 					<li key={project.id} className='group font-cousine'>
 						<Link target='_blank' href={project.link} className='flex gap-5 items-center'>
-							<span className='w-full text-sm text-slate-400 group-hover:text-white group-hover:underline decoration-dashed decoration-lightblue'>
+							<span className='w-full text-sm sm:text-base text-slate-400 group-hover:text-white group-hover:underline decoration-dashed decoration-limes'>
 								{project.title}
 							</span>
-							<div className='hidden sm:block w-full mr-2 border-t border-gray-700 rounded-2 transition duration-110 opacity-80 group-hover:border-white'></div>
-							<FiChevronsRight className='w-8 h-6 cursor-pointer animate-flash group-hover:text-lightblue' />
+							<div className='hidden sm:block w-full mr-2 border-t-2 border-gray-700 rounded-2 transition duration-110 opacity-80 group-hover:border-limes'></div>
+							<FiChevronsRight className='w-8 h-6 cursor-pointer animate-flash group-hover:text-limes' />
 						</Link>
 					</li>
 				))}
