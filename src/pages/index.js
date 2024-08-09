@@ -2,9 +2,10 @@ import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { HomeIntro } from '@/components/HomeIntro';
 import { Socials } from '@/components/ui/Socials';
 import { Projects } from '@/components/data/Projects';
+import { Work } from '@/components/data/Work';
+import { Stack } from '@/components/data/Stack';
 import siteData from '../data/siteData';
 import SEO from '../data/seo';
-import { Work } from '@/components/data/Work';
 
 export default function Home() {
 	const currentSEO = SEO.find((item) => item.page === 'home');
@@ -21,6 +22,7 @@ export default function Home() {
 				<HomeIntro datas={siteData.homePage} />
 				<Socials />
 				<Projects />
+				<Stack />
 				<Work />
 			</HelmetProvider>
 		</>

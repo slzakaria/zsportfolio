@@ -10,7 +10,15 @@ export const WorkStore = [
 	},
 	{
 		id: uid(),
-		name: 'Nuitee Travel api',
+		name: 'Freelance developer',
+		position: 'Wordpress Shopify',
+		from: 'January 2024',
+		to: 'Current',
+		link: '#projects',
+	},
+	{
+		id: uid(),
+		name: 'Nuitee Travel',
 		position: 'Fullstack Developer',
 		from: 'October 2023',
 		to: 'January 2024',
@@ -19,7 +27,7 @@ export const WorkStore = [
 	{
 		id: uid(),
 		name: 'AD/HOC Agency',
-		position: 'Web Developer',
+		position: 'Fullstack Developer',
 		from: 'May 2022',
 		to: 'October 2023.',
 		link: 'https://adhocmaroc.com',

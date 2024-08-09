@@ -22,7 +22,7 @@ import jenkins from '../assets/techs/jenkins.png';
 
 let uid = () => crypto.randomUUID().slice(0, 18);
 
-const Stacks = [
+export const Stacks = [
 	{
 		id: uid(),
 		image: javascript,

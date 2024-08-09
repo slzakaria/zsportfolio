@@ -1,4 +1,5 @@
 import { Header } from './ui/Header';
+import { Footer } from './ui/Footer';
 
 export function Layout({ path, setPath, children }) {
 	return (
@@ -7,6 +8,7 @@ export function Layout({ path, setPath, children }) {
 			<section className='container items-center justify-center flex-col mx-auto'>
 				{children}
 			</section>
+			<Footer />
 		</main>
 	);
 }

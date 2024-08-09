@@ -13,6 +13,7 @@ const siteData = {
 		github: 'https://github.com/Zackaria-Slimane',
 		linkedin: 'https://www.linkedin.com/in/zakaria-slimane/',
 		resume: 'https://drive.google.com/file/d/1qLGLyKX1MzV2b9wDQ93ElsdXXMjOPrpH/view?usp=sharing',
+		email: 'slzackaria@gmail.com',
 	},
 
 	homePage: {
