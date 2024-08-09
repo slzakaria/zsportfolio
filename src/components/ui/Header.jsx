@@ -4,6 +4,8 @@ import signature from '@/assets/logos/logowhite.png';
 
 export function Header({ active, setPath }) {
 	const pages = ['/', '/projects', '/articles', '/contact'];
+	const cleanedPages = pages.map((page) => page.replace('/', ''));
+
 	return (
 		<>
 			<header className='container flex flex-col-reverse gap-5 sm:flex-row sm:gap-0 items-center justify-between font-jetBrain'>
@@ -21,12 +23,12 @@ export function Header({ active, setPath }) {
 				</div>
 				<nav className='flex items-center font-jetBrain'>
 					<ul className='flex gap-3'>
-						{pages.map((page) => (
+						{pages.map((page, index) => (
 							<li key={page}>
 								<Link
 									onClick={() => setPath(page)}
 									href={page}
-									className='font-jetBrain text-sm hover:underline hover:text-lightblue underline-offset-4 decoration-dashed decoration-lightblue'>
+									className='font-jetBrain text-sm hover:underline hover:text-limes underline-offset-4 decoration-dashed decoration-limes'>
 									{page === '/' ? '~/' : page}
 								</Link>
 							</li>

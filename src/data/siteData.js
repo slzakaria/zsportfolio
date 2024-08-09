@@ -73,7 +73,7 @@ const siteData = {
 		{
 			id: uid(),
 			title: 'Golang api hands on : GitHub Issues Tracker with Go, React, and Docker',
-			link: 'https://www.linkedin.com/posts/zackaria-slimane_docker-golang-activity-7113649172439838720-Jd1-',
+			link: 'https://www.linkedin.com/pulse/learning-golang-hands-github-issues-tracker-go-react-docker-slimane-?trackingId=tGzX9JdqTNqOcpZDdOqE7w%3D%3D&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_recent_activity_content_view%3BWG4553jeQyOwUho1PDelew%3D%3D',
 		},
 		{
 			id: uid(),

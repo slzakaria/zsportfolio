@@ -1,6 +1,5 @@
 /** @type {import('tailwindcss').Config} */
 import typography from '@tailwindcss/typography';
-import { transform } from 'next/dist/build/swc';
 module.exports = {
 	darkMode: 'class',
 	content: [
@@ -18,7 +17,11 @@ module.exports = {
 				cousine: ['Cousine', 'sans-serif'],
 			},
 			colors: {
-				lightblue: '#06bee1',
+				lightblue: '#6EACDA',
+				eggshell: '#EEEEEE',
+				cream: '#E2E2B6',
+				limes: '#BED754',
+				darkgreen: '#059669',
 			},
 		},
 	},

@@ -11,10 +11,10 @@ export function HomeIntro({ datas }) {
 
 	return (
 		<>
-			<div className='container font-cousine mt-10'>
+			<div className='container text-eggshell font-cousine mt-10'>
 				<h1>
-					I dabble in the devOps realm. and build
-					<span className='px-1.5 text-lightblue font-jetBrain'>
+					I dabble in devOps practices, and build
+					<span className='px-1.5 text-limes font-jetBrain'>
 						<TextTransition direction='down' inline='true' springConfig={presets.gentle}>
 							{TEXTS[index % TEXTS.length]}
 						</TextTransition>
