@@ -10,7 +10,7 @@ export function Projects() {
 			<ul className='mt-5 flex flex-col gap-2'>
 				{projects.map((project) => (
 					<li key={project.id} className='group font-cousine'>
-						<Link href={project.link} className='flex gap-5 items-center'>
+						<Link target='_blank' href={project.link} className='flex gap-5 items-center'>
 							<span className='w-full text-sm text-slate-400 group-hover:text-white group-hover:underline decoration-dashed decoration-lightblue'>
 								{project.title}
 							</span>

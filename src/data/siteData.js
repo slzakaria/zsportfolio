@@ -72,13 +72,13 @@ const siteData = {
 		},
 		{
 			id: uid(),
-			title: 'Building Your First CRUD App in Go: A Hands-On Tutorial',
-			link: 'https://www.linkedin.com/posts/zackaria-slimane_go-golang-mysql-activity-7116526295160631296-lHnf',
+			title: 'Golang api hands on : GitHub Issues Tracker with Go, React, and Docker',
+			link: 'https://www.linkedin.com/posts/zackaria-slimane_docker-golang-activity-7113649172439838720-Jd1-',
 		},
 		{
 			id: uid(),
-			title: 'Learning Golang , hands on : GitHub Issues Tracker with Go, React, and Docker',
-			link: 'https://www.linkedin.com/posts/zackaria-slimane_docker-golang-activity-7113649172439838720-Jd1-',
+			title: 'Building Your First CRUD App in Go: A Hands-On Tutorial',
+			link: 'https://www.linkedin.com/posts/zackaria-slimane_go-golang-mysql-activity-7116526295160631296-lHnf',
 		},
 		{
 			id: uid(),

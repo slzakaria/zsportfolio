@@ -4,6 +4,7 @@ import { Socials } from '@/components/ui/Socials';
 import { Projects } from '@/components/data/Projects';
 import { Work } from '@/components/data/Work';
 import { Stack } from '@/components/data/Stack';
+import { Articles } from '@/components/data/Articles';
 import siteData from '../data/siteData';
 import SEO from '../data/seo';
 
@@ -22,6 +23,7 @@ export default function Home() {
 				<HomeIntro datas={siteData.homePage} />
 				<Socials />
 				<Projects />
+				<Articles />
 				<Stack />
 				<Work />
 			</HelmetProvider>
