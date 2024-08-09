@@ -1,25 +1,23 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import profile from '@/assets/logos/profile.jpg';
+import signature from '@/assets/logos/logowhite.png';
 
 export function Header({ active, setPath }) {
 	const pages = ['/', '/projects', '/articles', '/contact'];
 	return (
 		<>
-			<header className='container flex flex-col-reverse gap-5 sm:flex-row sm:gap-0 items-center justify-between font-cousine'>
+			<header className='container flex flex-col-reverse gap-5 sm:flex-row sm:gap-0 items-center justify-between font-jetBrain'>
 				<div className='flex gap-2'>
-					<Image
-						src={profile}
-						alt='zakaria slimane'
-						placeholder='blur' // Optional blur-up while loading
-						className='rounded-full'
-						width={50}
-						height={50}
-					/>
-					<div className='min-h-[50px] flex flex-col items-start justify-center text-xs'>
-						<h1 className='font-bold'>zs</h1>
-						<span className='text-gray-500'>@zakariaslimane</span>
-					</div>
+					<Link href='/' className='hover:scale-110'>
+						<Image
+							src={signature}
+							alt='zakaria slimane, software developer'
+							placeholder='blur'
+							className='rounded-full'
+							width={100}
+							height={50}
+						/>
+					</Link>
 				</div>
 				<nav className='flex items-center font-jetBrain'>
 					<ul className='flex gap-3'>

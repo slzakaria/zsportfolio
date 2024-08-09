@@ -13,15 +13,13 @@ export function HomeIntro({ datas }) {
 		<>
 			<div className='container font-cousine mt-10'>
 				<h1>
-					i make
+					I dabble in the devOps realm. and build
 					<span className='px-1.5 text-lightblue font-jetBrain'>
 						<TextTransition direction='down' inline='true' springConfig={presets.gentle}>
 							{TEXTS[index % TEXTS.length]}
 						</TextTransition>
-						s,
+						s.
 					</span>
-					<br></br>
-					and dabble in the devOps realm.
 				</h1>
 				<h2 className='my-2 text-slate-300'>{datas.description}</h2>
 				<h2 className='text-slate-300'>{datas.cta}</h2>

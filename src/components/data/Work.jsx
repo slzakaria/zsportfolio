@@ -9,12 +9,11 @@ export function Work() {
 				{WorkStore.map((work) => (
 					<li key={work.id} className='group font-cousine'>
 						<Link href={work.link} className='flex gap-2 text-sm items-center'>
-							<span className='w-full sm:text-base text-xs text-slate-400 group-hover:text-white group-hover:underline decoration-dashed decoration-lightblue'>
+							<span className='w-full sm:text-sm text-xs text-slate-400 group-hover:text-white group-hover:underline decoration-dashed decoration-lightblue'>
 								{work.position}
 							</span>
-							<span className='w-full text-xs sm:text-base'>{work.name}</span>
+							<span className='w-full text-xs sm:text-sm'>{work.name}</span>
 							<div className='w-full flex justify-start text-xs'>
-								<span className='hidden sm:block'>{work.from}</span> -{' '}
 								<span className='mx-1'>{work.to}</span>
 							</div>
 						</Link>
