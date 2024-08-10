@@ -70,6 +70,7 @@ export default function Contact() {
 					.
 				</h1>
 				<p className='mt-6 font-cousine text-base'>{siteData.contactPage.description}</p>
+				<p className='mt-6 font-cousine text-base'>{siteData.contactPage.cta}</p>
 				<form
 					className='mt-5 max-w-4/5 mx-auto w-full border-none sm:border-solid border-slate-400 rounded-md'
 					content='formdata'

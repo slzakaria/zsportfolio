@@ -19,14 +19,14 @@ const siteData = {
 	homePage: {
 		title:
 			'Passionate Software Developer Fluent in React & Golang, Crafting Seamless Digital Experiences.',
-		description: `As a software developer, I leverage in JavaScript and React for the front end,  Golang for building efficient back-end systems. I'm always learning, enjoy collaborating, and passionate about technology and its use to solve problems.`,
-		cta: `Curious about DevOps, Cloud Engineering, CI/CD automation, and AWS technologies, I craft and deploy effective web solutions.`,
+		description: `As a software developer, I leverage in JavaScript and React for the front end and Golang for building efficient back-end systems. I'm always learning, enjoy collaborating, and passionate about technology and its use to solve problems.`,
+		cta: `Enthusiastic about DevOps, Cloud Engineering, CI/CD automation, and AWS technologies, I thrive in perpetual learning.`,
 	},
 
 	projectsPage: {
 		title: 'Problem Solving, One Line at a Time',
 		description: `Behind every project lies a challenge waiting to be conquered. Through meticulous problem-solving and creative thinking, I've transformed complex ideas into elegant solutions. These projects aren't just code; they're the product of determination, collaboration, and a relentless pursuit of excellence.`,
-		cta: "Whether you're seeking an innovative React application, a polished WordPress site, or any other web development endeavor, I'm ready to embark on a journey of innovation with you. Together, we'll turn your ideas into real solutions.",
+		cta: "Whether you need a React application, a polished WordPress site, or help with any web development project, I'm here to work with you to turn your ideas into practical solutions.",
 	},
 
 	aboutPage: {
@@ -43,14 +43,14 @@ const siteData = {
 	contactPage: {
 		title: "Get in Touch: Let's Turn Ideas into Reality",
 		description:
-			"Thank you for taking the time to explore my work and learn more about my passion for web development and creating digital experiences. If you're excited about the possibilities, have questions, or are ready to collaborate, I'd love to hear from you!",
-		cta: "At the heart of every successful project is a conversation—a meeting of minds, ideas, and aspirations. Whether you're a fellow developer, a business owner seeking a new website, or anyone else with a vision for the digital realm, I'm here to help transform your dreams into reality.",
+			'Thank you for taking the time to explore my work and learn more about my passion for web development and creating digital experiences.',
+		cta: "If you're excited about the possibilities, have questions, or are ready to collaborate, I'd love to hear from you!",
 	},
 
 	articlesPage: {
 		title: 'Unveiling the World of Web Development, React, Golang, DevOps, and Cloud Engineering.',
 		description:
-			"Software development is a journey filled with endless opportunities for learning and growth. I'm excited to share my experiences with you.",
+			'Follow along as I document my experiences and knowledge on web technologies, DevOps practices, and cloud solutions.',
 		cta: "Dive into the articles, gain new perspectives, and elevate your tech expertise. Sharing your thoughts on an article, seeking advice? I'm just a message away.",
 	},
 
@@ -162,7 +162,7 @@ const siteData = {
 		},
 		{
 			id: uid(),
-			title: 'Urbandrugstore beauty ecommerce',
+			title: 'Urbandrugstore wordpress ecommerce',
 			description: 'E-commerce website  - online beauty and drugstore',
 			linkText: 'View Project',
 			link: 'https://urbandrugstore.ma/',
@@ -170,7 +170,7 @@ const siteData = {
 		},
 		{
 			id: uid(),
-			title: 'BeautyMall beauty ecommerce',
+			title: 'BeautyMall wordpress ecommerce',
 			description: 'E-commerce website  - online beauty and drugstore',
 			linkText: 'View Project',
 			link: 'https://beautymall.ma/',

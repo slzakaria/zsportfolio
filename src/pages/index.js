@@ -29,7 +29,7 @@ export default function Home() {
 
 				<div className='container text-eggshell font-cousine mt-14'>
 					<h1 className='text-lg sm:text-2xl'>
-						I dabble in devOps practices, and build
+						I dabble in devOps practices, and build{' '}
 						<span className='text-limes font-jetBrain'>
 							<TextTransition direction='down' inline='true' springConfig={presets.gentle}>
 								{TEXTS[index % TEXTS.length]}
