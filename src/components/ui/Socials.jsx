@@ -9,24 +9,24 @@ export function Socials() {
 				<Link
 					href={siteData.socials.github}
 					className='p-2 bg-slate-800 hover:bg-slate-800/40 rounded-md'>
-					<FiGithub className='h-5 w-5' />
+					<FiGithub className='h-5 w-5 text-limes' />
 				</Link>
 				<Link
 					href={siteData.socials.linkedin}
 					className='p-2 bg-slate-800 hover:bg-slate-800/40 rounded-md'>
-					<FiLinkedin className='h-5 w-5' />
+					<FiLinkedin className='h-5 w-5 text-limes' />
 				</Link>
 				<Link
 					href={`mailto:${siteData.socials.email}`}
 					className='p-2 bg-slate-800 hover:bg-slate-800/40 rounded-md'>
-					<FiMail className='h-5 w-5' />
+					<FiMail className='h-5 w-5 text-limes' />
 				</Link>
 			</div>
 			<div className='flex'>
 				<Link
 					href={siteData.socials.resume}
 					className='p-2 bg-slate-800 hover:bg-slate-800/40 rounded-md flex items-center gap-2'>
-					<FiFileText />
+					<FiFileText className='w-5 h-5 text-limes' />
 					<span className='text-sm'>Resume</span>
 				</Link>
 			</div>

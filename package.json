@@ -12,7 +12,8 @@
 		"dev": "next dev",
 		"build": "next build",
 		"start": "next start",
-		"lint": "next lint"
+		"lint": "next lint",
+		"fast": "FAST_REFRESH=false next dev"
 	},
 	"dependencies": {
 		"@headlessui/react": "^1.7.17",

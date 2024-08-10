@@ -6,7 +6,7 @@
 	html {
 		overflow-x: hidden;
 		scroll-behavior: smooth;
-		background-color: #021526;
+		background-color: #000910;
 		background-image: url('../../public/paper.png');
 	}
 }
