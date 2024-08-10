@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { FiChevronsRight } from 'react-icons/fi';
 import siteData from '@/data/siteData';
 
-export function Articles() {
+export function ArticlesList() {
 	const articles = siteData.articles;
 	return (
 		<section id='articles' className='my-10'>
@@ -11,7 +11,7 @@ export function Articles() {
 				{articles.map((article) => (
 					<li key={article.id} className='group font-cousine'>
 						<Link target='_blank' href={article.link} className='flex gap-5 items-center'>
-							<span className='w-full text-sm text-slate-400 group-hover:text-white group-hover:underline decoration-dashed decoration-limes'>
+							<span className='w-full text-sm text-slate-300 group-hover:text-white group-hover:underline decoration-dashed decoration-limes'>
 								{article.title}
 							</span>
 							<FiChevronsRight className='w-4 h-4 cursor-pointer animate-flash group-hover:text-limes' />

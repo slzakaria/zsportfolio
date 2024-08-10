@@ -13,121 +13,121 @@ export function Stack() {
 			id: uid(),
 			image: 'SiJavascript',
 			title: 'Javascript',
-			color: 'yellow-400',
+			color: 'text-yellow-400',
 		},
 		{
 			id: uid(),
 			image: 'SiReact',
 			title: 'React',
-			color: 'sky-600',
+			color: 'text-sky-600',
 		},
 		{
 			id: uid(),
 			image: 'SiNextdotjs',
 			title: 'Next',
-			color: 'slate-400',
+			color: 'text-slate-400',
 		},
 		{
 			id: uid(),
 			image: 'SiNuxtdotjs',
 			title: 'Nuxt 3',
-			color: 'limes',
+			color: 'text-limes',
 		},
 		{
 			id: uid(),
 			image: 'SiVuedotjs',
 			title: 'Vue 3',
-			color: 'emerald-400',
+			color: 'text-emerald-400',
 		},
 		{
 			id: uid(),
 			image: 'SiNodedotjs',
 			title: 'Node JS',
-			color: 'green-700',
+			color: 'text-green-700',
 		},
 		{
 			id: uid(),
 			image: 'SiPostgresql',
 			title: 'PostgreSQL',
-			color: 'blue-400 ',
+			color: 'text-blue-400 ',
 		},
 		{
 			id: uid(),
 			image: 'SiMysql',
 			title: 'My SQL',
-			color: 'cyan-600',
+			color: 'text-cyan-500',
 		},
 		{
 			id: uid(),
 			image: 'SiGoland',
 			title: 'Golang',
-			color: 'sky-400',
+			color: 'text-sky-400',
 		},
 		{
 			id: uid(),
 			image: 'SiDocker',
 			title: 'Docker',
-			color: 'blue-500',
+			color: 'text-blue-500',
 		},
 		{
 			id: uid(),
 			image: 'SiAmazonaws',
 			title: 'AWS',
-			color: 'orange-500',
+			color: 'text-orange-500',
 		},
 		{
 			id: uid(),
 			image: 'SiTerraform',
 			title: 'Terraform',
-			color: 'purple-500',
+			color: 'text-purple-500',
 		},
 		{
 			id: uid(),
 			image: 'SiJenkins',
 			title: 'Jenkins',
-			color: 'red-500',
+			color: 'text-red-500',
 		},
 		{
 			id: uid(),
 			image: 'SiGithubactions',
 			title: 'GitActions',
-			color: 'sky-600',
+			color: 'text-sky-600',
 		},
 		{
 			id: uid(),
 			image: 'SiTailwindcss',
 			title: 'Tailwind',
-			color: 'cyan-300',
+			color: 'text-cyan-300',
 		},
 		{
 			id: uid(),
 			image: 'SiJquery',
 			title: 'jQuery',
-			color: 'blue-700',
+			color: 'text-blue-700',
 		},
 		{
 			id: uid(),
 			image: 'SiFigma',
 			title: 'Figma',
-			color: 'pink-500',
+			color: 'text-pink-500',
 		},
 		{
 			id: uid(),
 			image: 'SiPostman',
 			title: 'Postman',
-			color: 'orange-400',
+			color: 'text-orange-400',
 		},
 		{
 			id: uid(),
 			image: 'SiWordpress',
 			title: 'Wordpress',
-			color: 'purple-400',
+			color: 'text-purple-400',
 		},
 		{
 			id: uid(),
 			image: 'SiShopify',
 			title: 'Shopify',
-			color: 'lime-600',
+			color: 'text-lime-600',
 		},
 	];
 
@@ -144,7 +144,7 @@ export function Stack() {
 					<Slider.Slide key={stack.id}>
 						<span
 							id={stack.name}
-							className={`text-xs flex flex-col gap-2 items-center font-jetBrain mt-3 text-${stack.color}`}>
+							className={`text-xs flex flex-col gap-2 items-center font-jetBrain mt-3 ${stack.color}`}>
 							<IconComponent iconName={stack.image} />
 							{stack.title}
 						</span>

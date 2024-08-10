@@ -26,7 +26,7 @@ const siteData = {
 	projectsPage: {
 		title: 'Problem Solving, One Line at a Time',
 		description: `Behind every project lies a challenge waiting to be conquered. Through meticulous problem-solving and creative thinking, I've transformed complex ideas into elegant solutions. These projects aren't just code; they're the product of determination, collaboration, and a relentless pursuit of excellence.`,
-		cta: "Whether you're seeking an innovative React application, a polished WordPress site, or any other web development endeavor, I'm ready to embark on a journey of innovation with you. Together, we'll turn your ideas into projects that not only meet your goals but exceed your expectations. Let's integrate the power of DevOps and AWS to elevate your projects.",
+		cta: "Whether you're seeking an innovative React application, a polished WordPress site, or any other web development endeavor, I'm ready to embark on a journey of innovation with you. Together, we'll turn your ideas into real solutions.",
 	},
 
 	aboutPage: {
@@ -48,7 +48,7 @@ const siteData = {
 	},
 
 	articlesPage: {
-		title: 'Unveiling the World of Web Development, React, Golang, DevOps, and Cloud Engineering',
+		title: 'Unveiling the World of Web Development, React, Golang, DevOps, and Cloud Engineering.',
 		description:
 			"Software development is a journey filled with endless opportunities for learning and growth. I'm excited to share my experiences with you.",
 		cta: "Dive into the articles, gain new perspectives, and elevate your tech expertise. Sharing your thoughts on an article, seeking advice? I'm just a message away.",
@@ -62,7 +62,7 @@ const siteData = {
 		},
 		{
 			id: uid(),
-			title: 'Automating Infrastructure Deployment with Terraform (AWS example)',
+			title: 'Automating Infrastructure Deployment with Terraform (AWS)',
 			link: 'https://www.linkedin.com/posts/zackaria-slimane_devops-aws-terraform-activity-7141501700237848577-OvyE',
 		},
 		{
@@ -72,7 +72,7 @@ const siteData = {
 		},
 		{
 			id: uid(),
-			title: 'Golang api hands on : GitHub Issues Tracker with Go, React, and Docker',
+			title: 'GitHub Issues Tracker with Go, React, and Docker',
 			link: 'https://www.linkedin.com/pulse/learning-golang-hands-github-issues-tracker-go-react-docker-slimane-?trackingId=tGzX9JdqTNqOcpZDdOqE7w%3D%3D&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_recent_activity_content_view%3BWG4553jeQyOwUho1PDelew%3D%3D',
 		},
 		{

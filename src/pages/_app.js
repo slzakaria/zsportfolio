@@ -1,10 +1,12 @@
 import '@/styles/globals.css';
 import Head from 'next/head';
+import dynamic from 'next/dynamic';
 import { useState } from 'react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import { Analytics } from '@vercel/analytics/react';
 import { useRouter } from 'next/router';
 import { Layout } from '@/components/Layout';
+import { ToTop } from '@/components/ui/ToTop';
 
 export default function App({ Component, pageProps }) {
 	const { pathname } = useRouter();
@@ -40,6 +42,7 @@ export default function App({ Component, pageProps }) {
 			</Head>
 
 			<Layout path={path} setPath={setPath}>
+				<ToTop />
 				<SpeedInsights />
 				<Analytics />
 				<Component {...pageProps} />
