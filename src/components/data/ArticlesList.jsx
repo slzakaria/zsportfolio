@@ -10,7 +10,10 @@ export function ArticlesList() {
 			<ul className='mt-5 flex flex-col gap-2'>
 				{articles.map((article) => (
 					<li key={article.id} className='group font-cousine'>
-						<Link target='_blank' href={article.link} className='flex gap-5 items-center'>
+						<Link
+							target='_blank'
+							href={article.link}
+							className='flex gap-5 items-center article--Link'>
 							<article className='w-full text-sm text-slate-300 group-hover:text-limes group-hover:underline underline-offset-4 decoration-solid decoration-limes'>
 								{article.title}
 							</article>
