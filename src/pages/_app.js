@@ -17,7 +17,7 @@ export default function App({ Component, pageProps }) {
 			<Head>
 				<meta charSet='utf-8' />
 				<link rel='icon' href='/favicon.ico' />
-				<link rel='canonical' href={`https://zackariasl.dev${canonical}`} />
+				<link rel='canonical' href={`https://zakariaslimane.xyz${canonical}`} />
 				<link rel='manifest' href='/site.webmanifest' />
 				<meta name='viewport' content='width=device-width, initial-scale=1' />
 				<meta name='theme-color' content='#000910' />
