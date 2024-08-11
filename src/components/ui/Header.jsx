@@ -4,8 +4,6 @@ import signature from '@/assets/logos/logowhite.png';
 
 export function Header({ active, setPath }) {
 	const pages = ['/', '/projects', '/articles', '/contact'];
-	console.log(active);
-
 	return (
 		<>
 			<header className='sm:mt-5 flex container gap-10 flex-col items-center justify-between font-jetBrain'>

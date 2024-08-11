@@ -11,13 +11,13 @@ import { ToTop } from '@/components/ui/ToTop';
 export default function App({ Component, pageProps }) {
 	const { pathname } = useRouter();
 	const [path, setPath] = useState(pathname);
-
+	console.log('path name', pathname);
 	return (
 		<>
 			<Head>
 				<meta charSet='utf-8' />
 				<link rel='icon' href='/favicon.ico' />
-				<link rel='canonical' href='https://zackariasl.dev/' />
+				<link rel='canonical' href={`https://zackariasl.dev${pathname}`} />
 				<link rel='manifest' href='/site.webmanifest' />
 				<meta name='viewport' content='width=device-width, initial-scale=1' />
 				<meta name='theme-color' content='#000910' />
