@@ -1,7 +1,7 @@
 {
 	"name": "Zakaria Slimane - Software Developer | React | Golang | Nodejs | DevOps & Cloud",
 	"short_name": "Zakaria SLIMANE",
-	"theme_color": "#000910",
-	"background_color": "#ffffff",
+	"theme_color": "#fff",
+	"background_color": "#000910",
 	"display": "standalone"
 }

@@ -59,7 +59,7 @@ export function Stack() {
 		},
 		{
 			id: uid(),
-			image: 'SiGoland',
+			image: 'SiGo',
 			title: 'Golang',
 			color: 'text-sky-400',
 		},
