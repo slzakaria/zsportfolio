@@ -17,10 +17,10 @@ export default function App({ Component, pageProps }) {
 			<Head>
 				<meta charSet='utf-8' />
 				<link rel='icon' href='/favicon.ico' />
-				<link rel='canonical' href='https://zackariasl.dev' />
+				<link rel='canonical' href='https://zackariasl.dev/' />
 				<link rel='manifest' href='/site.webmanifest' />
 				<meta name='viewport' content='width=device-width, initial-scale=1' />
-				<meta name='theme-color' content='#14274E' />
+				<meta name='theme-color' content='#000910' />
 				<meta name='og:image' content='/zs.png' />
 				<meta
 					name='og:title'
@@ -37,7 +37,7 @@ export default function App({ Component, pageProps }) {
 				/>
 				<link rel='apple-touch-icon' href='/apple-touch-icon.png' />
 				<link rel='manifest' href='/manifest.json' />
-
+				<meta name='robots' content='index, follow' />
 				<title>Zakaria Slimane - Software Developer | JavaScript | Golang | DevOps & Cloud</title>
 			</Head>
 
