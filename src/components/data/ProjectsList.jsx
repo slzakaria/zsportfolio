@@ -11,7 +11,7 @@ export function ProjectsList() {
 				{projects.map((project) => (
 					<li key={project.id} className='group font-cousine'>
 						<Link target='_blank' href={project.link} className='flex gap-5 items-center'>
-							<span className='w-full text-sm sm:text-base text-slate-300 group-hover:text-limes group-hover:underline decoration-dashed underline-offset-4 decoration-limes'>
+							<span className='w-full text-sm sm:text-base text-slate-300 group-hover:text-limes group-hover:underline decoration-solid underline-offset-4 decoration-limes'>
 								{project.title}
 							</span>
 							<div className='hidden sm:block w-full mr-2 border-t-2 border-gray-700 rounded-2 transition duration-110 opacity-80 group-hover:border-limes'></div>

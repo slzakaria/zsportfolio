@@ -21,7 +21,7 @@ module.exports = {
 				lightblue: '#6EACDA',
 				eggshell: '#EEEEEE',
 				cream: '#E2E2B6',
-				limes: '#BED754',
+				limes: '#10b981',
 				darkgreen: '#059669',
 			},
 		},

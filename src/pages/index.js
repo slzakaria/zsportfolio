@@ -11,7 +11,14 @@ import SEO from '../data/seo';
 
 export default function Home() {
 	const currentSEO = SEO.find((item) => item.page === 'home');
-	const TEXTS = ['javaScript app', 'Golang app', 'AWS & cloud app', 'wordpress site'];
+	const TEXTS = [
+		'javaScript app',
+		'node server',
+		'Golang api',
+		'CI/CD pipeline',
+		'AWS & cloud app',
+		'wordpress site',
+	];
 	const [index, setIndex] = useState(0);
 	useEffect(() => {
 		const intervalId = setInterval(() => setIndex((index) => index + 1), 2500);
@@ -23,14 +30,18 @@ export default function Home() {
 				<Helmet>
 					<title>{siteData.main.title}</title>
 					<meta name='description' content={currentSEO.description} />
-					<link rel='canonical' href='https://zackariasl.dev' />
+					<link rel='canonical' href='https://zackariasl.dev/' />
 					<meta name='keywords' content={currentSEO.keywords.join(', ')} />
+					<meta property='og:title' content={siteData.main.title} />
+					<meta property='og:description' content={currentSEO.description} />
+					<meta name='robots' content='index, follow' />
+					<meta name='viewport' content='width=device-width, initial-scale=1.0'></meta>
 				</Helmet>
 
 				<div className='container text-eggshell font-cousine mt-14'>
 					<h1 className='text-lg sm:text-2xl'>
-						I dabble in devOps practices, and build{' '}
-						<span className='text-limes font-jetBrain'>
+						I dabble in devOps practices, <br></br>and build{' '}
+						<span className='text-limes font-jetBrain font-semibold'>
 							<TextTransition direction='down' inline='true' springConfig={presets.gentle}>
 								{TEXTS[index % TEXTS.length]}
 							</TextTransition>
