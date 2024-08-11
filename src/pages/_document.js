@@ -20,6 +20,14 @@ export default function Document() {
 						})(window, document, 'script', 'dataLayer', 'GTM-TX45GD23');
         `}
 				</Script>
+				{(process.env.NODE_ENV === 'development' || process.env.VERCEL_ENV === 'preview') && (
+					// eslint-disable-next-line @next/next/no-sync-scripts
+					<script
+						data-project-id='BbjXP2sUYz2uXbn0bOPztFIHzhezx26Y9S4bx82x'
+						data-is-production-environment='false'
+						src='https://snippet.meticulous.ai/v1/meticulous.js'
+					/>
+				)}
 			</Head>
 			<body>
 				<noscript
