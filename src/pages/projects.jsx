@@ -5,7 +5,13 @@ import { ProjectsList } from '@/components/data/ProjectsList';
 import SEO from '@/data/seo';
 import siteData from '@/data/siteData';
 
-export default function Projects() {
+export async function getServerSideProps() {
+	const res = await fetch('https://api.github.com/repos/Zackaria-Slimane/cvforge');
+	const repo = await res.json();
+	return { props: { repo } };
+}
+
+export default function Projects({ repo }) {
 	const currentSEO = SEO.find((item) => item.page === 'projects');
 	const TEXTS = ['Line', 'Solution', 'project'];
 	const [index, setIndex] = useState(0);
@@ -19,7 +25,6 @@ export default function Projects() {
 			<Helmet>
 				<title>{`Projects | ${siteData.main.title}`}</title>
 				<meta name='description' content={currentSEO.description} />
-				<link rel='canonical' href='https://zackariasl.dev/projects/' />
 				<meta name='keywords' content={currentSEO.keywords.join(', ')} />
 				<meta property='og:title' content={`Projects | ${siteData.main.title}`} />
 				<meta property='og:description' content={currentSEO.description} />

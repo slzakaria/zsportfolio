@@ -69,7 +69,6 @@ export default function Contact() {
 			<Helmet>
 				<title>{`Contact | ${siteData.main.title}`}</title>
 				<meta name='description' content={currentSEO.description} />
-				<link rel='canonical' href='https://zackariasl.dev/contact/' />
 				<meta name='keywords' content={currentSEO.keywords.join(', ')} />
 				<meta property='og:title' content={`Contact | ${siteData.main.title}`} />
 				<meta property='og:description' content={currentSEO.description} />

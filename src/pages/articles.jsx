@@ -5,7 +5,13 @@ import { ArticlesList } from '@/components/data/ArticlesList';
 import SEO from '@/data/seo';
 import siteData from '@/data/siteData';
 
-export default function Articles() {
+export async function getServerSideProps() {
+	const res = await fetch('https://api.github.com/repos/Zackaria-Slimane/cvforge');
+	const repo = await res.json();
+	return { props: { repo } };
+}
+
+export default function Articles({ repo }) {
 	const currentSEO = SEO.find((item) => item.page === 'articles');
 	const TEXTS = ['JavaScript,', 'React,', 'Golang,', 'CICD,', 'AWS,'];
 	const [index, setIndex] = useState(0);
@@ -18,7 +24,6 @@ export default function Articles() {
 			<Helmet>
 				<title>{`Articles | ${siteData.main.title}`}</title>
 				<meta name='description' content={currentSEO.description} />
-				<link rel='canonical' href='https://zackariasl.dev/articles/' />
 				<meta name='keywords' content={currentSEO.keywords.join(', ')} />
 				<meta property='og:title' content={`Articles | ${siteData.main.title}`} />
 				<meta property='og:description' content={currentSEO.description} />

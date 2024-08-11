@@ -9,7 +9,13 @@ import { ArticlesList } from '@/components/data/ArticlesList';
 import siteData from '../data/siteData';
 import SEO from '../data/seo';
 
-export default function Home() {
+export async function getServerSideProps() {
+	const res = await fetch('https://api.github.com/repos/Zackaria-Slimane/cvforge');
+	const repo = await res.json();
+	return { props: { repo } };
+}
+
+export default function Home({ repo }) {
 	const currentSEO = SEO.find((item) => item.page === 'home');
 	const TEXTS = [
 		'javaScript app',
@@ -30,7 +36,6 @@ export default function Home() {
 				<Helmet>
 					<title>{siteData.main.title}</title>
 					<meta name='description' content={currentSEO.description} />
-					<link rel='canonical' href='https://zackariasl.dev/' />
 					<meta name='keywords' content={currentSEO.keywords.join(', ')} />
 					<meta property='og:title' content={siteData.main.title} />
 					<meta property='og:description' content={currentSEO.description} />
