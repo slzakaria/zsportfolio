@@ -37,6 +37,18 @@ export default function Contact() {
 
 	const formSubmit = (e) => {
 		e.preventDefault();
+		if (nameRef.current.value === '' || mailRef.current.value === '') {
+			toast.error('Please fill out the form fields.', {
+				duration: 3000,
+				position: 'top-right',
+				ariaProps: {
+					role: 'status',
+					'aria-live': 'polite',
+				},
+			});
+			return;
+		}
+
 		const formData = new FormData(e.target);
 		fetch('https://getform.io/f/6b7547f9-bd94-4d3a-9d96-edbd80e61c89', {
 			method: 'POST',
@@ -70,7 +82,7 @@ export default function Contact() {
 				<h1 className='text-lg sm:text-2xl'>
 					Get in Touch and let&apos;s turn Ideas into
 					<TextTransition direction='down' inline='true' springConfig={presets.gentle}>
-						<span className='text-limes pl-2'>{TEXTS[index % TEXTS.length]}</span>
+						<span className='text-limes sm:pl-0 pl-2'>{TEXTS[index % TEXTS.length]}</span>
 					</TextTransition>
 					.
 				</h1>
@@ -90,6 +102,7 @@ export default function Contact() {
 								type='text'
 								name='name'
 								ref={nameRef}
+								required
 								className='flex p-3 rounded-sm focus:outline-lightblue bg-slate-300 text-black'
 							/>
 						</div>
@@ -98,6 +111,7 @@ export default function Contact() {
 							<input
 								type='text'
 								name='email'
+								required
 								ref={mailRef}
 								className='flex p-3 rounded-sm focus:outline-lightblue bg-slate-300 text-black'
 							/>
@@ -108,6 +122,7 @@ export default function Contact() {
 								name='message'
 								rows='6'
 								ref={messageRef}
+								required
 								className='flex p-3 rounded-sm resize-y focus:outline-lightblue bg-slate-300 text-black'></textarea>
 						</div>
 					</div>
