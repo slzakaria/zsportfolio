@@ -57,7 +57,12 @@ export default function Contact() {
 			<Helmet>
 				<title>{`Contact | ${siteData.main.title}`}</title>
 				<meta name='description' content={currentSEO.description} />
+				<link rel='canonical' href='https://zackariasl.dev/contact/' />
 				<meta name='keywords' content={currentSEO.keywords.join(', ')} />
+				<meta property='og:title' content={`Contact | ${siteData.main.title}`} />
+				<meta property='og:description' content={currentSEO.description} />
+				<meta name='robots' content='index, follow' />
+				<meta name='viewport' content='width=device-width, initial-scale=1.0'></meta>
 			</Helmet>
 			<Toaster />
 
@@ -65,7 +70,7 @@ export default function Contact() {
 				<h1 className='text-lg sm:text-2xl'>
 					Get in Touch and let&apos;s turn Ideas into
 					<TextTransition direction='down' inline='true' springConfig={presets.gentle}>
-						<span className='text-limes'>{TEXTS[index % TEXTS.length]}</span>
+						<span className='text-limes pl-2'>{TEXTS[index % TEXTS.length]}</span>
 					</TextTransition>
 					.
 				</h1>
@@ -108,7 +113,7 @@ export default function Contact() {
 					</div>
 					<button type='submit' className='mt-5 relative px-6 py-3 text-black rounded-lg group'>
 						<span className='absolute inset-0 w-full h-full transition duration-300 transform -translate-x-1 -translate-y-1 bg-cream ease opacity-80 group-hover:translate-x-0 group-hover:translate-y-0'></span>
-						<span className='absolute inset-0 w-full h-full transition duration-300 transform translate-x-1 translate-y-1 bg-sky-600 ease opacity-80 group-hover:translate-x-0 group-hover:translate-y-0 mix-blend-colro'></span>
+						<span className='absolute inset-0 w-full h-full transition duration-300 transform translate-x-1 translate-y-1 bg-limes ease opacity-80 group-hover:translate-x-0 group-hover:translate-y-0 mix-blend-colro'></span>
 						<span className='relative font-sans text-sm font-medium'>Submit</span>
 					</button>
 				</form>

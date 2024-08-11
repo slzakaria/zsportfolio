@@ -17,9 +17,14 @@ export default function Projects() {
 	return (
 		<HelmetProvider>
 			<Helmet>
-				<title>{`Contact | ${siteData.main.title}`}</title>
+				<title>{`Projects | ${siteData.main.title}`}</title>
 				<meta name='description' content={currentSEO.description} />
+				<link rel='canonical' href='https://zackariasl.dev/projects/' />
 				<meta name='keywords' content={currentSEO.keywords.join(', ')} />
+				<meta property='og:title' content={`Projects | ${siteData.main.title}`} />
+				<meta property='og:description' content={currentSEO.description} />
+				<meta name='robots' content='index, follow' />
+				<meta name='viewport' content='width=device-width, initial-scale=1.0'></meta>
 			</Helmet>
 
 			<section className='mt-14 text-eggshell font-cousine'>

@@ -11,9 +11,9 @@ export function ArticlesList() {
 				{articles.map((article) => (
 					<li key={article.id} className='group font-cousine'>
 						<Link target='_blank' href={article.link} className='flex gap-5 items-center'>
-							<span className='w-full text-sm text-slate-300 group-hover:text-limes group-hover:underline underline-offset-4 decoration-dashed decoration-limes'>
+							<article className='w-full text-sm text-slate-300 group-hover:text-limes group-hover:underline underline-offset-4 decoration-solid decoration-limes'>
 								{article.title}
-							</span>
+							</article>
 							<FiChevronsRight className='w-4 h-4 cursor-pointer animate-flash group-hover:text-limes' />
 						</Link>
 					</li>
