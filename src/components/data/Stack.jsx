@@ -133,7 +133,7 @@ export function Stack() {
 
 	return (
 		<section className='my-10'>
-			<h1 className='text-2xl font-jetBrain mb-5'>What i work with</h1>
+			<h2 className='text-2xl font-jetBrain mb-5'>What i work with</h2>
 			<Slider
 				width='90px'
 				duration={20}

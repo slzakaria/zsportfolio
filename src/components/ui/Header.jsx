@@ -23,12 +23,12 @@ export function Header({ active, setPath }) {
 						/>
 					</Link>
 					<div>
-						<h1 className='font-jetBrain text-lg sm:text-2xl flex flex-col items-center justify-center gap-2'>
+						<h2 className='font-jetBrain text-lg sm:text-2xl flex flex-col items-center justify-center gap-2'>
 							<span className='bg-emerald-500 px-2 py-1 rounded-sm text-black underline'>
 								Software developer
 							</span>
 							& devOps enthusiast.
-						</h1>
+						</h2>
 					</div>
 				</div>
 				<nav className='font-jetBrain container'>

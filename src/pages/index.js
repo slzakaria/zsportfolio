@@ -9,7 +9,7 @@ import { ArticlesList } from '@/components/data/ArticlesList';
 import siteData from '../data/siteData';
 import SEO from '../data/seo';
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
 	const res = await fetch('https://api.github.com/repos/Zackaria-Slimane/cvforge');
 	const repo = await res.json();
 	return { props: { repo } };
@@ -35,6 +35,7 @@ export default function Home({ repo }) {
 			<HelmetProvider>
 				<Helmet>
 					<title>{siteData.main.title}</title>
+					<link rel='canonical' href='https://zakariaslimane.xyz/' />
 					<meta name='description' content={currentSEO.description} />
 					<meta name='keywords' content={currentSEO.keywords.join(', ')} />
 					<meta property='og:title' content={siteData.main.title} />
@@ -54,9 +55,9 @@ export default function Home({ repo }) {
 						</span>
 					</h1>
 					<br></br>
-					<h1 className='sm:text-2xl text-xl font-jetBrain mb-5'>About me </h1>
-					<h2 className='mb-2 text-slate-300'>{siteData.homePage.description}</h2>
-					<h2 className='text-slate-300'>{siteData.homePage.cta}</h2>
+					<h2 className='sm:text-2xl text-xl font-jetBrain mb-5'>About me </h2>
+					<h3 className='mb-2 text-slate-300'>{siteData.homePage.description}</h3>
+					<h3 className='text-slate-300'>{siteData.homePage.cta}</h3>
 				</div>
 				<Socials />
 				<ProjectsList />
