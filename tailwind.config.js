@@ -23,6 +23,7 @@ module.exports = {
 				cream: '#E2E2B6',
 				limes: '#10b981',
 				darkgreen: '#059669',
+				dark: '#000910',
 			},
 		},
 	},

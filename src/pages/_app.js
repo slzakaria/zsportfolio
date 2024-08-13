@@ -1,3 +1,5 @@
+'use client';
+
 import '@/styles/globals.css';
 import Head from 'next/head';
 import { useState } from 'react';
@@ -6,10 +8,12 @@ import { Analytics } from '@vercel/analytics/react';
 import { useRouter } from 'next/router';
 import { Layout } from '@/components/Layout';
 import { ToTop } from '@/components/ui/ToTop';
+import { ThemeSwitcher } from '@/components/ui/ThemeSwitcher';
 
 export default function App({ Component, pageProps }) {
 	const { pathname } = useRouter();
 	const [path, setPath] = useState(pathname);
+	const [theme, setTheme] = useState('dark');
 
 	return (
 		<>
@@ -39,8 +43,9 @@ export default function App({ Component, pageProps }) {
 				<title>Zakaria Slimane - Software Developer | JavaScript | Golang | DevOps & Cloud</title>
 			</Head>
 
-			<Layout path={path} setPath={setPath}>
+			<Layout theme={theme} path={path} setPath={setPath}>
 				<ToTop />
+				<ThemeSwitcher theme={theme} setTheme={setTheme} />
 				<SpeedInsights />
 				<Analytics />
 				<Component {...pageProps} />

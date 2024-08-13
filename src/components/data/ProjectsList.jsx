@@ -14,7 +14,7 @@ export function ProjectsList() {
 							target='_blank'
 							href={project.link}
 							className='flex gap-5 items-center project--Link'>
-							<span className='w-full text-sm sm:text-base text-slate-300 group-hover:text-limes group-hover:underline decoration-solid underline-offset-4 decoration-limes'>
+							<span className='w-full text-base sm:text-lg dark:text-white text-dark group-hover:text-green-700 group-hover:underline decoration-solid underline-offset-4 decoration-limes'>
 								{project.title}
 							</span>
 							<div className='hidden sm:block w-full mr-2 border-t-2 border-gray-700 rounded-2 transition duration-110 opacity-80 group-hover:border-limes'></div>

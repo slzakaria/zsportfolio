@@ -1,39 +1,42 @@
+'use client';
+
+import { memo } from 'react';
 import { FiGithub, FiLinkedin, FiMail, FiFileText } from 'react-icons/fi';
 import Link from 'next/link';
 import siteData from '@/data/siteData';
 
-export function Socials() {
+export const Socials = memo(function Socials() {
 	return (
 		<div className='mt-8 mb-6 flex items-center justify-between'>
 			<div className='flex gap-5'>
 				<Link
 					rel='nofollow'
 					href={siteData.socials.github}
-					className='p-2 bg-slate-800 hover:bg-slate-800/40 rounded-md'>
-					<FiGithub className='h-5 w-5 text-slate-400' />
+					className='p-2 text-dark bg-limes hover:bg-limes/70 rounded-sm'>
+					<FiGithub className='h-5 w-5' />
 				</Link>
 				<Link
 					rel='nofollow'
 					href={siteData.socials.linkedin}
-					className='p-2 bg-slate-800 hover:bg-slate-800/40 rounded-md'>
-					<FiLinkedin className='h-5 w-5 text-slate-400' />
+					className='p-2 text-dark bg-limes hover:bg-limes/70 rounded-sm'>
+					<FiLinkedin className='h-5 w-5' />
 				</Link>
 				<Link
 					rel='nofollow'
 					href={`mailto:${siteData.socials.email}`}
-					className='p-2 bg-slate-800 hover:bg-slate-800/40 rounded-md'>
-					<FiMail className='h-5 w-5 text-slate-400' />
+					className='p-2 text-dark bg-limes hover:bg-limes/70 rounded-sm'>
+					<FiMail className='h-5 w-5' />
 				</Link>
 			</div>
 			<div className='flex'>
 				<Link
 					rel='nofollow'
 					href={siteData.socials.resume}
-					className='p-2 bg-slate-800 hover:bg-slate-800/40 rounded-md flex items-center gap-2'>
-					<FiFileText className='w-5 h-5 text-slate-400' />
+					className='p-2 text-dark bg-limes hover:bg-limes/70 rounded-sm flex items-center gap-2'>
+					<FiFileText className='w-5 h-5' />
 					<span className='text-sm'>Resume</span>
 				</Link>
 			</div>
 		</div>
 	);
-}
+});
