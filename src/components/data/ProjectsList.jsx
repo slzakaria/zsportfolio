@@ -6,7 +6,7 @@ export function ProjectsList() {
 	const projects = siteData.projects;
 	return (
 		<section id='projects' className='mt-12'>
-			<h1 className='sm:text-2xl text-xl font-jetBrain'>What i built on the side</h1>
+			<h2 className='sm:text-2xl text-xl font-jetBrain'>What i built on the side</h2>
 			<ul className='mt-5 flex flex-col gap-2'>
 				{projects.map((project) => (
 					<li key={project.id} className='group font-cousine'>

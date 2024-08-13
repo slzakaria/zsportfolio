@@ -5,7 +5,7 @@ import { ProjectsList } from '@/components/data/ProjectsList';
 import SEO from '@/data/seo';
 import siteData from '@/data/siteData';
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
 	const res = await fetch('https://api.github.com/repos/Zackaria-Slimane/cvforge');
 	const repo = await res.json();
 	return { props: { repo } };
@@ -23,7 +23,8 @@ export default function Projects({ repo }) {
 	return (
 		<HelmetProvider>
 			<Helmet>
-				<title>{`Projects | ${siteData.main.title}`}</title>
+				<title>{`Projects | ${siteData.main.offTitle}`}</title>
+				<link rel='canonical' href='https://zakariaslimane.xyz/projects/' />
 				<meta name='description' content={currentSEO.description} />
 				<meta name='keywords' content={currentSEO.keywords.join(', ')} />
 				<meta property='og:title' content={`Projects | ${siteData.main.title}`} />

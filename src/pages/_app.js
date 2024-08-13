@@ -10,30 +10,28 @@ import { ToTop } from '@/components/ui/ToTop';
 export default function App({ Component, pageProps }) {
 	const { pathname } = useRouter();
 	const [path, setPath] = useState(pathname);
-	let canonical = pathname === '/' ? pathname : `${pathname}/`;
 
 	return (
 		<>
 			<Head>
 				<meta charSet='utf-8' />
 				<link rel='icon' href='/favicon.ico' />
-				<link rel='canonical' href={`https://zakariaslimane.xyz${canonical}`} />
 				<link rel='manifest' href='/site.webmanifest' />
 				<meta name='viewport' content='width=device-width, initial-scale=1' />
 				<meta name='theme-color' content='#000910' />
 				<meta name='og:image' content='/zs.png' />
 				<meta
 					name='og:title'
-					content='Zakaria Slimane - Software Developer | JavaScript | Golang | DevOps & Cloud'
+					content='Zakaria Slimane Software Developer | JavaScript | Golang | DevOps'
 				/>
 				<meta name='twitter:title' content='Zakaria SLIMANE - Software Developer' />
 				<meta
 					name='og:description'
-					content='Zakaria Slimane - Software Developer | JavaScript | Golang | DevOps & Cloud'
+					content='Zakaria Slimane Software Developer | JavaScript | Golang | DevOps'
 				/>
 				<meta
 					name='description'
-					content='Zakaria Slimane - Software Developer | JavaScript | Golang | DevOps & Cloud'
+					content='Zakaria Slimane Software Developer | JavaScript | Golang | DevOps'
 				/>
 				<link rel='apple-touch-icon' href='/apple-touch-icon.png' />
 				<link rel='manifest' href='/manifest.json' />
