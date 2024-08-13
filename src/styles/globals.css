@@ -6,8 +6,15 @@
 	html {
 		overflow-x: hidden;
 		scroll-behavior: smooth;
-		background-color: #000910;
 		background-image: url('../../public/paper.png');
+	}
+
+	body.dark {
+		background-color: #000910;
+	}
+
+	body.light {
+		background-color: #eeeeee;
 	}
 }
 

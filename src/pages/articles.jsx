@@ -1,7 +1,6 @@
 import { Helmet, HelmetProvider } from 'react-helmet-async';
-import TextTransition, { presets } from 'react-text-transition';
-import { useState, useEffect } from 'react';
 import { ArticlesList } from '@/components/data/ArticlesList';
+import { TextRotation } from '@/components/ui/TextRotation';
 import SEO from '@/data/seo';
 import siteData from '@/data/siteData';
 
@@ -13,12 +12,6 @@ export async function getStaticProps() {
 
 export default function Articles({ repo }) {
 	const currentSEO = SEO.find((item) => item.page === 'articles');
-	const TEXTS = ['JavaScript,', 'React,', 'Golang,', 'CICD,', 'AWS,'];
-	const [index, setIndex] = useState(0);
-	useEffect(() => {
-		const intervalId = setInterval(() => setIndex((index) => index + 1), 2500);
-		return () => clearTimeout(intervalId);
-	}, []);
 	return (
 		<HelmetProvider>
 			<Helmet>
@@ -32,17 +25,27 @@ export default function Articles({ repo }) {
 				<meta name='viewport' content='width=device-width, initial-scale=1.0'></meta>
 			</Helmet>
 
-			<section className='mt-14 text-eggshell font-cousine'>
+			<section className='mt-14 dark:text-white text-dark font-cousine'>
 				<div className='mb-5'>
-					<h1 className='text-lg sm:text-2xl'>
+					<h1 className='text-xl sm:text-3xl'>
 						Unveiling the World of Web Development{' '}
-						<TextTransition direction='down' inline='true' springConfig={presets.gentle}>
-							<span className='text-limes'>{TEXTS[index % TEXTS.length]}</span>
-						</TextTransition>{' '}
+						<span className='text-limes'>
+							<TextRotation type='articles' />
+						</span>{' '}
 						devOps and Cloud Engineering
 					</h1>
 					<br></br>
-					<h2>{siteData.articlesPage.description}</h2>
+					<h2 className='text-lg'>
+						Follow along as I document my experiences and knowledge on web technologies,{' '}
+						<span className='text-orange-500 font-jetBrain font-semibold underline underline-offset-4 decoration-dashed decoration-orange-600'>
+							devOps
+						</span>{' '}
+						practices, and{' '}
+						<span className='text-sky-500 font-jetBrain font-semibold underline underline-offset-4 decoration-dashed decoration-sky-600'>
+							cloud
+						</span>{' '}
+						solutions.
+					</h2>
 				</div>
 
 				<ArticlesList />
