@@ -74,7 +74,7 @@ const siteData = {
 		{
 			id: uid(),
 			title: 'GitHub Issues Tracker with Go, React, and Docker',
-			link: 'https://www.linkedin.com/pulse/learning-golang-hands-github-issues-tracker-go-react-docker-slimane-?trackingId=tGzX9JdqTNqOcpZDdOqE7w%3D%3D&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_recent_activity_content_view%3BWG4553jeQyOwUho1PDelew%3D%3D',
+			link: 'https://www.linkedin.com/pulse/learning-golang-hands-github-issues-tracker-go-react-docker-slimane-?trackingId=tGzX9JdqTNqOcpZDdOqE7w%3D%3D',
 		},
 		{
 			id: uid(),
@@ -84,7 +84,7 @@ const siteData = {
 		{
 			id: uid(),
 			title: 'React Ecosystem in 2023 - Brief overview',
-			link: 'https://www.linkedin.com/posts/zackaria-slimane_reactdeveloper-reactjs-reactjsdeveloper-activity-7108381434226049024-v8aY',
+			link: 'https://www.linkedin.com/pulse/react-ecosystem-2023-brief-overview-zackaria-slimane-/?trackingId=vYnyyQTkReeGdqNLDwhyHw%3D%3D',
 		},
 	],
 
