@@ -2,6 +2,7 @@
 const nextConfig = {
 	reactStrictMode: true,
 	poweredByHeader: false,
+	swcMinify: true,
 	devIndicators: {
 		buildActivity: true,
 		buildActivityPosition: 'bottom-right',

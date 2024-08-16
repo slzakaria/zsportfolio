@@ -60,7 +60,7 @@ export default function Contact() {
 		<HelmetProvider>
 			<Helmet>
 				<title>{`Contact | ${siteData.main.offTitle}`}</title>
-				<link rel='canonical' href='https://zakariaslimane.xyz/contact/' />
+				<link rel='canonical' href='https://zakariaslimane.xyz/contact' />
 				<meta name='description' content={currentSEO.description} />
 				<meta name='keywords' content={currentSEO.keywords.join(', ')} />
 				<meta property='og:title' content={`Contact | ${siteData.main.title}`} />
@@ -73,7 +73,7 @@ export default function Contact() {
 			<section id='contact' className='mt-14 dark:text-white text-dark font-jetBrain'>
 				<h1 className='text-xl sm:text-3xl'>
 					Get in Touch and let&apos;s turn Ideas into
-					<span className='text-limes pl-2'>
+					<span className='text-limes sm:pl-0 pl-2'>
 						<TextRotation type='contact' />.
 					</span>
 				</h1>
