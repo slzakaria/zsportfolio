@@ -1,41 +1,31 @@
 # Build stage
-FROM node:20.9-alpine AS build
-WORKDIR /app
+FROM node:current-alpine3.20 AS builder
 
-# Copy package files and install dependencies
+WORKDIR /app
 COPY package*.json ./
 RUN npm ci
+COPY . .
 
-# Copy necessary files for the build
-COPY src ./src
-COPY public ./public
-COPY next.config.mjs ./
-COPY jsconfig.json ./
-COPY tailwind.config.js ./
-COPY postcss.config.mjs ./
-
+# Build the application
 RUN npm run build
 
 # Production stage
-FROM node:20.9-alpine
-
-# Install necessary production dependencies
-RUN apk add --no-cache libc6-compat
+FROM node:current-alpine3.20 AS runner
 
 WORKDIR /app
-COPY package*.json ./
-RUN npm ci --only=production
 
-# Copy built files and necessary runtime files from build stage
-COPY --from=build /app/.next ./.next
-COPY --from=build /app/public ./public
-COPY next.config.mjs ./
+# Install only production dependencies
+COPY package*.json ./
+RUN npm ci --only=production && npm cache clean --force
+
+# Copy necessary files from builder stage
+COPY --from=builder /app/public ./public
+COPY --from=builder /app/.next/standalone ./
+COPY --from=builder /app/.next/static ./.next/static
 
 # Create a non-root user and switch to it
 RUN addgroup -g 1001 -S nodejs && adduser -S nextjs -u 1001
-RUN chown -R nextjs:nodejs /app
 USER nextjs
 
-
 EXPOSE 3000
-CMD ["npm", "start"]
+CMD ["node", "server.js"]
