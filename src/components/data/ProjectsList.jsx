@@ -5,7 +5,7 @@ import siteData from '@/data/siteData';
 export function ProjectsList() {
 	const projects = siteData.projects;
 	return (
-		<section id='projects' className='mt-12'>
+		<section id='projects' className='sm:my-20 my-12'>
 			<h2 className='sm:text-2xl text-xl font-jetBrain'>What i built on the side</h2>
 			<ul className='mt-5 flex flex-col gap-2'>
 				{projects.map((project) => (

@@ -68,9 +68,9 @@ export default function Home() {
 					</h3>
 				</div>
 				<Socials />
+				<Stack />
 				<ProjectsList />
 				<ArticlesList />
-				<Stack />
 				<Work />
 			</HelmetProvider>
 		</>
