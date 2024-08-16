@@ -31,7 +31,7 @@ export function ToTop() {
 			onClick={() => {
 				window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
 			}}
-			className='fixed bottom-[40px] right-[10px] text-2xl p-1 text-limes rounded-lg hover:text-limes hover:scale-125 duration-200'>
+			className='fixed bottom-[40px] right-[10px] text-2xl p-1 text-dark dark:text-white rounded-lg hover:scale-125 duration-200'>
 			<FaAnglesUp />
 		</button>
 	);

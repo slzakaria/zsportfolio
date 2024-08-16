@@ -7,7 +7,7 @@ import siteData from '@/data/siteData';
 
 export const Socials = memo(function Socials() {
 	return (
-		<div className='mt-8 mb-6 flex items-center justify-between'>
+		<div className='sm:my-12 my-6 flex items-center justify-between'>
 			<div className='flex gap-5'>
 				<Link
 					rel='nofollow'

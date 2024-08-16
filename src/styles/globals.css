@@ -6,15 +6,14 @@
 	html {
 		overflow-x: hidden;
 		scroll-behavior: smooth;
-		background-image: url('../../public/paper.png');
 	}
 
 	body.dark {
-		background-color: #000910;
+		background-image: linear-gradient(to right, #000910 0%, black 100%);
 	}
 
 	body.light {
-		background-color: #eeeeee;
+		background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
 	}
 }
 
