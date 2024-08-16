@@ -17,7 +17,7 @@ export default function Projects({ repo }) {
 		<HelmetProvider>
 			<Helmet>
 				<title>{`Projects | ${siteData.main.offTitle}`}</title>
-				<link rel='canonical' href='https://zakariaslimane.xyz/projects/' />
+				<link rel='canonical' href='https://zakariaslimane.xyz/projects' />
 				<meta name='description' content={currentSEO.description} />
 				<meta name='keywords' content={currentSEO.keywords.join(', ')} />
 				<meta property='og:title' content={`Projects | ${siteData.main.title}`} />
