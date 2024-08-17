@@ -6,7 +6,7 @@ export function ArticlesList() {
 	const articles = siteData.articles;
 	return (
 		<section id='articles' className='sm:my-20 my-12'>
-			<h2 className='text-2xl font-jetBrain mb-5'>Some of my thoughts</h2>
+			<h2 className='sm:text-2xl text-xl font-jetBrain'>Some of my thoughts</h2>
 			<ul className='mt-5 flex flex-col gap-2'>
 				{articles.map((article) => (
 					<li key={article.id} className='group font-cousine'>

@@ -12,10 +12,10 @@ export function Work() {
 							<span className='w-full sm:text-base text-xs dark:text-white text-dark group-hover:text-limes group-hover:underline decoration-solid underline-offset-4 decoration-limes'>
 								{work.position}
 							</span>
-							<span className='w-full dark:text-eggshell text-dark text-center mx-auto text-xs sm:text-base'>
+							<span className='w-full dark:text-white text-dark text-center mx-auto text-xs sm:text-base'>
 								{work.name}
 							</span>
-							<div className='w-full flex dark:text-eggshell text-dark justify-end text-xs sm:text-sm'>
+							<div className='w-full flex dark:text-white text-dark justify-end text-xs sm:text-sm'>
 								<span className='mx-1'>{work.to}</span>
 							</div>
 						</Link>

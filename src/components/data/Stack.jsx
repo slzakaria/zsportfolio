@@ -1,8 +1,52 @@
 import Slider from 'react-infinite-logo-slider';
-import * as Icons from 'react-icons/si';
+import {
+	SiJavascript,
+	SiReact,
+	SiNextdotjs,
+	SiNuxtdotjs,
+	SiVuedotjs,
+	SiNodedotjs,
+	SiPostgresql,
+	SiMysql,
+	SiGo,
+	SiDocker,
+	SiAmazonaws,
+	SiTerraform,
+	SiGithubactions,
+	SiTailwindcss,
+	SiJenkins,
+	SiJquery,
+	SiFigma,
+	SiPostman,
+	SiWordpress,
+	SiShopify,
+} from 'react-icons/si';
+
+const iconMap = {
+	SiJavascript,
+	SiReact,
+	SiNextdotjs,
+	SiNuxtdotjs,
+	SiVuedotjs,
+	SiNodedotjs,
+	SiPostgresql,
+	SiMysql,
+	SiGo,
+	SiDocker,
+	SiAmazonaws,
+	SiTerraform,
+	SiGithubactions,
+	SiTailwindcss,
+	SiJenkins,
+	SiJquery,
+	SiFigma,
+	SiPostman,
+	SiWordpress,
+	SiShopify,
+};
 
 const IconComponent = ({ iconName }) => {
-	const Icon = Icons[iconName];
+	const Icon = iconMap[iconName];
 	return Icon ? <Icon size={32} /> : null;
 };
 
@@ -135,8 +179,8 @@ export function Stack() {
 		<section className='sm:my-20 my-12'>
 			<h2 className='text-2xl font-jetBrain mb-5'>What i work with</h2>
 			<Slider
-				width='90px'
-				duration={20}
+				width='140px'
+				duration={25}
 				pauseOnHover={true}
 				blurBorders={true}
 				blurBoderColor={'transparent'}>

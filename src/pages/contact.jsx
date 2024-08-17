@@ -72,7 +72,7 @@ export default function Contact() {
 
 			<section id='contact' className='mt-14 dark:text-white text-dark font-jetBrain'>
 				<h1 className='text-xl sm:text-3xl'>
-					Get in Touch and let&apos;s turn Ideas into
+					Get in Touch and let&apos;s turn <br className='sm:hidden' /> Ideas into
 					<span className='text-limes sm:pl-0 pl-2'>
 						<TextRotation type='contact' />.
 					</span>

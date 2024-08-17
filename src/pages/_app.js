@@ -24,23 +24,18 @@ export default function App({ Component, pageProps }) {
 				<meta name='viewport' content='width=device-width, initial-scale=1' />
 				<meta name='theme-color' content='#000910' />
 				<meta name='og:image' content='/zs.png' />
-				<meta
-					name='og:title'
-					content='Zakaria Slimane Software Developer | JavaScript | Golang | DevOps'
-				/>
+				<meta name='og:title' content='Zakaria Slimane Software Developer DevOps & cloud' />
 				<meta name='twitter:title' content='Zakaria SLIMANE - Software Developer' />
+				<meta name='og:description' content='Zakaria Slimane Software Developer DevOps & cloud' />
+				<meta name='description' content='Zakaria Slimane Software Developer DevOps & cloud' />
 				<meta
-					name='og:description'
-					content='Zakaria Slimane Software Developer | JavaScript | Golang | DevOps'
-				/>
-				<meta
-					name='description'
-					content='Zakaria Slimane Software Developer | JavaScript | Golang | DevOps'
+					name='twitter:description'
+					content='Zakaria Slimane Software Developer DevOps & cloud'
 				/>
 				<link rel='apple-touch-icon' href='/apple-touch-icon.png' />
 				<link rel='manifest' href='/manifest.json' />
 				<meta name='robots' content='index, follow' />
-				<title>Zakaria Slimane - Software Developer | JavaScript | Golang | DevOps & Cloud</title>
+				<title>Zakaria Slimane - Software Developer DevOps & Cloud</title>
 			</Head>
 
 			<Layout theme={theme} path={path} setPath={setPath}>

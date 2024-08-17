@@ -4,13 +4,7 @@ import { TextRotation } from '@/components/ui/TextRotation';
 import SEO from '@/data/seo';
 import siteData from '@/data/siteData';
 
-export async function getStaticProps() {
-	const res = await fetch('https://api.github.com/repos/Zackaria-Slimane/cvforge');
-	const repo = await res.json();
-	return { props: { repo } };
-}
-
-export default function Articles({ repo }) {
+export default function Articles() {
 	const currentSEO = SEO.find((item) => item.page === 'articles');
 	return (
 		<HelmetProvider>
@@ -32,16 +26,17 @@ export default function Articles({ repo }) {
 						<span className='text-limes'>
 							<TextRotation type='articles' />
 						</span>{' '}
+						<br className='sm:hidden' />
 						devOps and Cloud Engineering
 					</h1>
 					<br></br>
 					<h2 className='text-lg'>
 						Follow along as I document my experiences and knowledge on web technologies,{' '}
-						<span className='text-orange-500 font-jetBrain font-semibold underline underline-offset-4 decoration-dashed decoration-orange-600'>
+						<span className='font-jetBrain font-semibold underline underline-offset-4 decoration-dashed decoration-orange-600'>
 							devOps
 						</span>{' '}
 						practices, and{' '}
-						<span className='text-sky-500 font-jetBrain font-semibold underline underline-offset-4 decoration-dashed decoration-sky-600'>
+						<span className='font-jetBrain font-semibold underline underline-offset-4 decoration-dashed decoration-sky-600'>
 							cloud
 						</span>{' '}
 						solutions.

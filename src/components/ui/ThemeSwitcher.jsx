@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useEffect } from 'react';
 import { FiSun as Sun } from 'react-icons/fi';
 import { WiMoonAltWaningCrescent4 as Moon } from 'react-icons/wi';
 

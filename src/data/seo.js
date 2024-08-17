@@ -18,23 +18,6 @@ const SEO = [
 		],
 	},
 	{
-		page: 'about',
-		description:
-			'Experienced in JavaScript, Golang, and modern React development. Passionate about DevOps and Cloud Engineering. Crafting user-centric websites that seamlessly blend functionality and aesthetics. A perpetual learner and collaborator, shaping the future through technology.',
-		keywords: [
-			'Zakaria slimane',
-			'Web developer',
-			'Software developer',
-			'Full Stack developer',
-			'Frontend developer',
-			'React developer',
-			'Golang developer',
-			'DevOps enthusiast',
-			'Cloud Engineering',
-			'AWS',
-		],
-	},
-	{
 		page: 'projects',
 		description:
 			'Explore handcrafted projects showcasing expertise in JavaScript ES6, React, and more. Dive into projects highlighting DevOps practices, CI/CD automation, and AWS integration. From dynamic web applications to user-friendly e-commerce platforms, each project embodies innovation and functionality.',
