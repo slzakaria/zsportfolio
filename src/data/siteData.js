@@ -1,14 +1,11 @@
-import zs from '../assets/logos/zs.png';
-
 const uid = () => crypto.randomUUID();
 
 const siteData = {
 	main: {
-		title: 'Zakaria Slimane Software Developer | JavaScript | Golang | DevOps',
-		offTitle: 'Zakaria Slimane | JavaScript | Golang | DevOps',
+		title: 'Zakaria Slimane Software Developer | JavaScript DevOps & Cloud',
+		offTitle: 'Zakaria Slimane | JavaScript DevOps & Cloud',
 		name: 'Zakaria Slimane',
 		email: 'slzackaria@gmail.com',
-		logo: zs,
 	},
 	socials: {
 		github: 'https://github.com/Zackaria-Slimane',
@@ -17,42 +14,11 @@ const siteData = {
 		email: 'slzackaria@gmail.com',
 	},
 
-	homePage: {
-		title:
-			'Passionate Software Developer Fluent in React & Golang, Crafting Seamless Digital Experiences.',
-		description: `As a software developer, I leverage in JavaScript and React for the front end and Golang for building efficient back-end systems. I'm always learning, enjoy collaborating, and passionate about technology and its use to solve problems.`,
-		cta: `Enthusiastic about DevOps, Cloud Engineering, CI/CD automation, and AWS technologies, I thrive in perpetual learning.`,
-	},
-
-	projectsPage: {
-		title: 'Problem Solving, One Line at a Time',
-		description: `Behind every project lies a challenge waiting to be conquered. Through meticulous problem-solving and creative thinking, I've transformed complex ideas into elegant solutions. These projects aren't just code; they're the product of determination, collaboration, and a relentless pursuit of excellence.`,
-		cta: "Whether you need a React application, a polished WordPress site, or help with any web development project, I'm here to work with you to turn your ideas into practical solutions.",
-	},
-
-	aboutPage: {
-		title: 'Crafting Digital Experiences with Passion and Precision',
-		description:
-			'With a strong foundation in JavaScript, Golang, and a modern touch with React, I craft user-centric websites that seamlessly blend functionality and aesthetics. My focus on DevOps and Cloud Engineering enhances my ability to create scalable solutions.',
-		why: "Aside my web development skills, I've been captivated by the transformative power of DevOps practices to ensure seamless deployment and operations.",
-		learning:
-			"Continuous learning is at the heart of what I do, ensuring that I'm always up to date with the latest advancements of industry trends and best practices, especially in DevOps, CI/CD automation, and AWS technologies.",
-		skills:
-			"My toolbox isn't limited to just JavaScript and React & Golang. I'm also well-versed in WordPress, Shopify, Node.js, and adept at integrating these technologies with DevOps and AWS for robust solutions.",
-	},
-
 	contactPage: {
 		title: "Get in Touch: Let's Turn Ideas into Reality",
 		description:
 			'Thank you for taking the time to explore my work and learn more about my passion for web development and creating digital experiences.',
 		cta: "If you're excited about the possibilities, have questions, or are ready to collaborate, I'd love to hear from you!",
-	},
-
-	articlesPage: {
-		title: 'Unveiling the World of Web Development, React, Golang, DevOps, and Cloud Engineering.',
-		description:
-			'Follow along as I document my experiences and knowledge on web technologies, DevOps practices, and cloud solutions.',
-		cta: "Dive into the articles, gain new perspectives, and elevate your tech expertise. Sharing your thoughts on an article, seeking advice? I'm just a message away.",
 	},
 
 	articles: [

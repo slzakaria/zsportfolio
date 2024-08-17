@@ -4,13 +4,7 @@ import { TextRotation } from '@/components/ui/TextRotation';
 import SEO from '@/data/seo';
 import siteData from '@/data/siteData';
 
-export async function getStaticProps() {
-	const res = await fetch('https://api.github.com/repos/Zackaria-Slimane/cvforge');
-	const repo = await res.json();
-	return { props: { repo } };
-}
-
-export default function Projects({ repo }) {
+export default function Projects() {
 	const currentSEO = SEO.find((item) => item.page === 'projects');
 
 	return (
@@ -29,7 +23,7 @@ export default function Projects({ repo }) {
 			<section className='mt-14 dark:text-white text-dark font-cousine'>
 				<div className='mb-5'>
 					<h1 className='text-xl sm:text-3xl'>
-						Problem solving, one{' '}
+						Problem solving, <br className='sm:hidden' /> one{' '}
 						<span className='text-limes'>
 							<TextRotation type='projects' />
 						</span>{' '}
@@ -38,19 +32,19 @@ export default function Projects({ repo }) {
 					<br></br>
 					<h2 className='text-lg'>
 						Whether you need a{' '}
-						<span className='text-sky-500 font-jetBrain font-semibold underline underline-offset-4 decoration-dashed decoration-sky-600'>
+						<span className='font-jetBrain font-semibold underline underline-offset-4 decoration-dashed decoration-sky-600'>
 							React
 						</span>{' '}
 						application, a polished{' '}
-						<span className='text-purple-500 font-jetBrain font-semibold underline underline-offset-4 decoration-dashed decoration-purple-600'>
+						<span className='font-jetBrain font-semibold underline underline-offset-4 decoration-dashed decoration-purple-600'>
 							Wordpress
 						</span>{' '}
 						site, or help with any{' '}
-						<span className='text-amber-500 font-jetBrain font-semibold underline underline-offset-4 decoration-dashed decoration-amber-600'>
+						<span className='font-jetBrain font-semibold underline underline-offset-4 decoration-dashed decoration-amber-600'>
 							web developement
 						</span>{' '}
 						project, I&apos;m here to work with you to turn your ideas into{' '}
-						<span className='text-emerald-500 font-jetBrain font-semibold underline underline-offset-4 decoration-dashed decoration-emerald-600'>
+						<span className='font-jetBrain font-semibold underline underline-offset-4 decoration-dashed decoration-emerald-600'>
 							practical solutions.
 						</span>{' '}
 					</h2>

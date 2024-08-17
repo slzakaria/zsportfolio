@@ -28,7 +28,7 @@ export function Header({ theme, active, setPath }) {
 							<span className='bg-emerald-500 px-2 py-1 rounded-sm text-dark underline'>
 								Software developer
 							</span>
-							& devOps enthusiast.
+							devOps & cloud.
 						</h2>
 					</div>
 				</div>
