@@ -1,5 +1,4 @@
 import { Helmet, HelmetProvider } from 'react-helmet-async';
-import { useState, useEffect } from 'react';
 import { Socials } from '@/components/ui/Socials';
 import { TextRotation } from '@/components/ui/TextRotation';
 import { ProjectsList } from '@/components/data/ProjectsList';
@@ -10,11 +9,8 @@ import siteData from '../data/siteData';
 import SEO from '../data/seo';
 
 export default function Home() {
-	useEffect(() => {
-		console.log('rendering home');
-	}, []);
-
 	const currentSEO = SEO.find((item) => item.page === 'home');
+
 	return (
 		<>
 			<HelmetProvider>
