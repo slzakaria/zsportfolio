@@ -97,6 +97,14 @@ const siteData = {
 		},
 		{
 			id: uid(),
+			title: 'Agency Template',
+			description: 'Landing page for an agency',
+			linkText: 'View Project',
+			link: 'https://agency-templace.vercel.app/',
+			featured: false,
+		},
+		{
+			id: uid(),
 			title: 'Bank product template',
 			description: 'Responsive & modern landing page for a Bank',
 			linkText: 'View Project',
