@@ -105,22 +105,6 @@ const siteData = {
 		},
 		{
 			id: uid(),
-			title: 'Nextjs Startup Template',
-			description: 'Landing page for a startup',
-			linkText: 'View Project',
-			link: 'https://startup-tailwind.vercel.app/',
-			featured: false,
-		},
-		{
-			id: uid(),
-			title: 'SaaS product Template',
-			description: 'Landing page for a SaaS product',
-			linkText: 'View Project',
-			link: 'https://formifi.vercel.app/',
-			featured: false,
-		},
-		{
-			id: uid(),
 			title: 'Cvforge resume maker - Desktop app',
 			description: 'A resume maker.',
 			linkText: 'View Project',
