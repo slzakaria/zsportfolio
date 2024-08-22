@@ -27,7 +27,7 @@ export default function Home() {
 
 				<div className='container dark:text-white text-slate-900 font-cousine mt-14 text-pretty'>
 					<h1 className='text-xl sm:text-3xl text-balance'>
-						Currenlty diving into everything devOps and building {''}
+						I am a self-driven developer with a focus in everything devOps and building {''}
 						<span className='text-limes font-jetBrain font-semibold'>
 							<TextRotation type='home' />
 							s.
