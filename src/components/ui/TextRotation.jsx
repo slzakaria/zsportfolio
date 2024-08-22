@@ -2,12 +2,11 @@ import { useState, useEffect, memo } from 'react';
 import TextTransition, { presets } from 'react-text-transition';
 
 const home = [
-	'javaScript app',
-	'node server',
+	'web application',
 	'Golang api',
 	'CI/CD pipeline',
 	'AWS & cloud app',
-	'wordpress site',
+	'wordpress & shopify site',
 ];
 const projects = ['Line', 'Solution', 'project'];
 const articles = ['JavaScript,', 'React,', 'Golang,', 'CICD,', 'AWS,'];

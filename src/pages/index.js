@@ -25,9 +25,9 @@ export default function Home() {
 					<meta name='viewport' content='width=device-width, initial-scale=1.0'></meta>
 				</Helmet>
 
-				<div className='container dark:text-white text-slate-900 font-cousine mt-14'>
-					<h1 className='text-xl sm:text-3xl'>
-						I dabble in devOps practices and build{' '}
+				<div className='container dark:text-white text-slate-900 font-cousine mt-14 text-pretty'>
+					<h1 className='text-xl sm:text-3xl text-balance'>
+						Currenlty diving into everything devOps and building {''}
 						<span className='text-limes font-jetBrain font-semibold'>
 							<TextRotation type='home' />
 							s.

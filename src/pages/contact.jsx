@@ -77,10 +77,10 @@ export default function Contact() {
 						<TextRotation type='contact' />.
 					</span>
 				</h1>
-				<p className='mt-6 font-cousine text-lg'>{siteData.contactPage.description}</p>
-				<p className='mt-6 font-cousine text-lg'>{siteData.contactPage.cta}</p>
+				<p className='mt-6 font-cousine text-balance text-lg'>{siteData.contactPage.description}</p>
+				<p className='mt-6 font-cousine text-balance text-lg'>{siteData.contactPage.cta}</p>
 				<form
-					className='mt-5 max-w-4/5 mx-auto w-full border-none sm:border-solid border-slate-400 rounded-md'
+					className='mt-5 pr-10 sm:pr-16 max-w-4/5 mx-auto w-full border-none sm:border-solid border-slate-400 rounded-md'
 					content='formdata'
 					onSubmit={(e) => formSubmit(e)}
 					acceptCharset='UTF-8'

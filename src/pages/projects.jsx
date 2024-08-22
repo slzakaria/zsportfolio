@@ -30,7 +30,7 @@ export default function Projects() {
 						at a time.
 					</h1>
 					<br></br>
-					<h2 className='text-lg'>
+					<h2 className='text-lg text-pretty'>
 						Whether you need a{' '}
 						<span className='font-jetBrain font-semibold underline underline-offset-4 decoration-dashed decoration-sky-600'>
 							React

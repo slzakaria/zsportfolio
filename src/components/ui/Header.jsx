@@ -33,7 +33,7 @@ export function Header({ theme, active, setPath }) {
 					</div>
 				</div>
 				<nav className='font-jetBrain container'>
-					<ul className='flex gap-5 justify-center'>
+					<ul className='flex gap-5 justify-evenly'>
 						{pages.map((page, index) => (
 							<li key={page}>
 								<Link

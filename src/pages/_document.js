@@ -8,7 +8,7 @@ export default function Document() {
 				<link rel='preconnect' href='https://fonts.googleapis.com' />
 				<link rel='preconnect' href='https://fonts.gstatic.com' crossOrigin='true' />
 				<link
-					href='https://fonts.googleapis.com/css2?family=Cousine:ital,wght@0,400;0,700;1,400;1,700&family=JetBrains+Mono:wght@100..800&display=swap'
+					href='https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap'
 					rel='stylesheet'
 				/>
 				<Script id='google-tag-manager' strategy='afterInteractive'>
@@ -28,7 +28,7 @@ export default function Document() {
 					/>
 				)}
 			</Head>
-			<body className='dark'>
+			<body className='light'>
 				<noscript
 					dangerouslySetInnerHTML={{
 						__html: `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5VN9RWGN"

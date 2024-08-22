@@ -7,7 +7,7 @@ import { WiMoonAltWaningCrescent4 as Moon } from 'react-icons/wi';
 export function ThemeSwitcher({ theme, setTheme }) {
 	useEffect(() => {
 		document.body.classList.remove('dark', 'light');
-		document.body.classList.add(theme || 'dark');
+		document.body.classList.add(theme || 'light');
 		localStorage.setItem('theme', theme);
 	}, [theme]);
 
