@@ -6,7 +6,7 @@ const home = [
 	'Golang api',
 	'CI/CD pipeline',
 	'AWS & cloud app',
-	'wordpress & shopify site',
+	'wordpress site',
 ];
 const projects = ['Line', 'Solution', 'project'];
 const articles = ['JavaScript,', 'React,', 'Golang,', 'CICD,', 'AWS,'];

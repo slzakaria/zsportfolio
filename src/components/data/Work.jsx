@@ -7,7 +7,7 @@ export function Work() {
 			<h2 className='sm:text-2xl text-xl font-jetBrain'>What i have been doing</h2>
 			<ul className='mt-5 flex flex-col gap-2'>
 				{WorkStore.map((work) => (
-					<li key={work.id} className='group font-cousine'>
+					<li key={work.id} className='group font-jetBrain'>
 						<Link href={work.link} className='flex gap-2 text-sm items-center'>
 							<span className='w-full sm:text-base text-xs dark:text-white text-dark group-hover:text-limes group-hover:underline decoration-solid underline-offset-4 decoration-limes'>
 								{work.position}

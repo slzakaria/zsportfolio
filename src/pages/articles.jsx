@@ -19,20 +19,19 @@ export default function Articles() {
 				<meta name='viewport' content='width=device-width, initial-scale=1.0'></meta>
 			</Helmet>
 
-			<section className='mt-14 dark:text-white text-dark font-cousine'>
+			<section className='mt-14 dark:text-white text-dark font-jetBrain'>
 				<div className='mb-5'>
 					<h1 className='text-xl sm:text-3xl'>
-						Unveiling the World of Web Development <br />
+						I write about {''}
 						<span className='text-limes'>
 							<TextRotation type='articles' />
-						</span>{' '}
-						<br className='sm:hidden' />
+						</span>
+						<br />
 						devOps and Cloud Engineering
 					</h1>
 					<br></br>
 					<h2 className='text-lg text-pretty'>
 						Follow along as I document my experiences and knowledge on web technologies,
-						<br />
 						<span className='font-jetBrain font-semibold underline underline-offset-4 decoration-dashed decoration-orange-600'>
 							devOps
 						</span>{' '}

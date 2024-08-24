@@ -9,7 +9,7 @@ export function ArticlesList() {
 			<h2 className='sm:text-2xl text-xl font-jetBrain'>Some of my thoughts</h2>
 			<ul className='mt-5 flex flex-col gap-2'>
 				{articles.map((article) => (
-					<li key={article.id} className='group font-cousine'>
+					<li key={article.id} className='group font-jetBrain'>
 						<Link
 							target='_blank'
 							href={article.link}
