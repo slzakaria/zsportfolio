@@ -20,7 +20,7 @@ export default function Projects() {
 				<meta name='viewport' content='width=device-width, initial-scale=1.0'></meta>
 			</Helmet>
 
-			<section className='mt-14 dark:text-white text-dark font-cousine'>
+			<section className='mt-14 dark:text-white text-dark font-jetBrain'>
 				<div className='mb-5'>
 					<h1 className='text-xl sm:text-3xl'>
 						Problem solving, <br className='sm:hidden' /> one{' '}

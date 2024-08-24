@@ -3,7 +3,7 @@ import Link from 'next/link';
 export default function errorPage() {
 	return (
 		<div className='mt-16'>
-			<div className='text-center font-cousine'>
+			<div className='text-center font-jetBrain'>
 				<p className='text-4xl font-semibold text-white'>Sorry, there&lsquo;s nothing here</p>
 				<p className='mt-4 text-3xl font-bold tracking-tight text-orange-400 sm:text-4xl'>
 					Looks Like You have Strayed Off the Digital Path!

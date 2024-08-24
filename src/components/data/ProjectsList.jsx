@@ -9,7 +9,7 @@ export function ProjectsList() {
 			<h2 className='sm:text-2xl text-xl font-jetBrain'>What i built on the side</h2>
 			<ul className='mt-5 flex flex-col gap-2'>
 				{projects.map((project) => (
-					<li key={project.id} className='group font-cousine'>
+					<li key={project.id} className='group font-jetBrain'>
 						<Link
 							target='_blank'
 							href={project.link}

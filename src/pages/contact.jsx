@@ -72,13 +72,14 @@ export default function Contact() {
 
 			<section id='contact' className='mt-14 dark:text-white text-dark font-jetBrain'>
 				<h1 className='text-xl sm:text-3xl'>
-					Get in Touch and let&apos;s turn <br className='sm:hidden' /> Ideas into
+					Get in Touch and let&apos;s turn Ideas <br />
+					into
 					<span className='text-limes pl-1'>
 						<TextRotation type='contact' />.
 					</span>
 				</h1>
-				<p className='mt-6 font-cousine text-balance text-lg'>{siteData.contactPage.description}</p>
-				<p className='mt-6 font-cousine text-balance text-lg'>{siteData.contactPage.cta}</p>
+				<p className='mt-6 font-jetBrain text-pretty text-lg'>{siteData.contactPage.description}</p>
+				<p className='mt-6 font-jetBrain text-balance text-lg'>{siteData.contactPage.cta}</p>
 				<form
 					className='mt-5 pr-10 sm:pr-16 max-w-4/5 mx-auto w-full border-none sm:border-solid border-slate-400 rounded-md'
 					content='formdata'
