@@ -30,27 +30,32 @@ const siteData = {
 		{
 			id: uid(),
 			title: 'Automating Infrastructure Deployment with Terraform (AWS)',
-			link: 'https://www.linkedin.com/posts/zackaria-slimane_devops-aws-terraform-activity-7141501700237848577-OvyE',
+			link: 'https://www.linkedin.com/pulse/automating-infrastructure-deployment-terraform-aws-example-slimane--ei0ze/',
 		},
 		{
 			id: uid(),
 			title: 'AWS EC2 Instance Setup and Secure CI/CD Pipeline with Jenkins',
-			link: 'https://www.linkedin.com/posts/zackaria-slimane_devops-cicd-jenkins-activity-7132072448983748608--Ikf',
+			link: 'https://www.linkedin.com/pulse/brief-overview-aws-ec2-instance-setup-secure-cicd-jenkins-slimane--3t3oe/',
 		},
 		{
 			id: uid(),
 			title: 'GitHub Issues Tracker with Go, React, and Docker',
-			link: 'https://www.linkedin.com/pulse/learning-golang-hands-github-issues-tracker-go-react-docker-slimane-?trackingId=tGzX9JdqTNqOcpZDdOqE7w%3D%3D',
+			link: 'https://www.linkedin.com/pulse/learning-golang-hands-github-issues-tracker-go-react-docker-slimane-/',
 		},
 		{
 			id: uid(),
 			title: 'Building Your First CRUD App in Go: A Hands-On Tutorial',
-			link: 'https://www.linkedin.com/posts/zackaria-slimane_go-golang-mysql-activity-7116526295160631296-lHnf',
+			link: 'https://www.linkedin.com/pulse/building-your-first-crud-app-go-hands-on-tutorial-zackaria-slimane-/',
 		},
 		{
 			id: uid(),
 			title: 'React Ecosystem in 2023 - Brief overview',
-			link: 'https://www.linkedin.com/pulse/react-ecosystem-2023-brief-overview-zackaria-slimane-/?trackingId=vYnyyQTkReeGdqNLDwhyHw%3D%3D',
+			link: 'https://www.linkedin.com/pulse/react-ecosystem-2023-brief-overview-zackaria-slimane-/',
+		},
+		{
+			id: uid(),
+			title: 'Demystifying React useContext Hook',
+			link: 'https://www.linkedin.com/pulse/demystifying-reacts-usecontext-hook-zackaria-slimane-/',
 		},
 	],
 
