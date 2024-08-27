@@ -78,6 +78,14 @@ const siteData = {
 		},
 		{
 			id: uid(),
+			title: 'Helm charts & kubernetes deployement',
+			description: 'Helm and kubernetes deployement of a python api',
+			linkText: 'View Project',
+			link: 'https://github.com/Zackaria-Slimane/python-api---helm-kubernetes-deployement',
+			featured: true,
+		},
+		{
+			id: uid(),
 			title: 'Pennysense Budget app',
 			description: 'Personal finance and budgeting app',
 			linkText: 'View Project',
