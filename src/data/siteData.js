@@ -8,7 +8,7 @@ const siteData = {
 		email: 'slzackaria@gmail.com',
 	},
 	socials: {
-		github: 'https://github.com/Zackaria-Slimane',
+		github: 'https://github.com/slzakaria',
 		linkedin: 'https://www.linkedin.com/in/zakaria-slimane/',
 		resume: 'https://drive.google.com/file/d/1EXekq3OSwmrj8MRveG9m8R-zFmGg20jT/view?usp=sharing',
 		email: 'slzackaria@gmail.com',
@@ -65,7 +65,7 @@ const siteData = {
 			title: 'Golang api template',
 			description: 'Basic starter of a Go API microservice dockerized',
 			linkText: 'View Project',
-			link: 'https://github.com/Zackaria-Slimane/go-docker-ms',
+			link: 'https://github.com/slzakaria/go-docker-ms',
 			featured: true,
 		},
 		{
@@ -73,7 +73,7 @@ const siteData = {
 			title: 'Terraform AWS template',
 			description: 'Provisioning starter for AWS resources using Terraform',
 			linkText: 'View Project',
-			link: 'https://github.com/Zackaria-Slimane/terraform-ec2',
+			link: 'https://github.com/slzakaria/terraform-ec2',
 			featured: true,
 		},
 		{
@@ -81,7 +81,7 @@ const siteData = {
 			title: 'Helm charts & kubernetes deployement',
 			description: 'Helm and kubernetes deployement of a python api',
 			linkText: 'View Project',
-			link: 'https://github.com/Zackaria-Slimane/python-api---helm-kubernetes-deployement',
+			link: 'https://github.com/slzakaria/python-api---helm-kubernetes-deployement',
 			featured: true,
 		},
 		{
@@ -129,7 +129,7 @@ const siteData = {
 			title: 'Golang CLI notes',
 			description: 'Golang CLI tasks application',
 			linkText: 'View Project',
-			link: 'https://github.com/Zackaria-Slimane/gotask',
+			link: 'https://github.com/slzakaria/gotask',
 			featured: false,
 		},
 		{
