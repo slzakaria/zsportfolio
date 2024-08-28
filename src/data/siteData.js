@@ -2,15 +2,15 @@ const uid = () => crypto.randomUUID();
 
 const siteData = {
 	main: {
-		title: 'Zakaria Slimane Software Developer | JavaScript DevOps & Cloud',
-		offTitle: 'Zakaria Slimane | JavaScript DevOps & Cloud',
+		title: 'Zakaria Slimane | Software Developer DevOps & Cloud',
+		offTitle: 'Zakaria Slimane | Software Developer DevOps & Cloud',
 		name: 'Zakaria Slimane',
 		email: 'slzackaria@gmail.com',
 	},
 	socials: {
 		github: 'https://github.com/slzakaria',
 		linkedin: 'https://www.linkedin.com/in/zakaria-slimane/',
-		resume: 'https://drive.google.com/file/d/1EXekq3OSwmrj8MRveG9m8R-zFmGg20jT/view?usp=sharing',
+		resume: 'https://drive.google.com/file/d/1Ybyhe-cHJ2Cv_Cm52JRbgZNggO62tDrj/view?usp=sharing',
 		email: 'slzackaria@gmail.com',
 	},
 
