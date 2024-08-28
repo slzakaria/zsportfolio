@@ -11,7 +11,7 @@ import { ThemeSwitcher } from '@/components/ui/ThemeSwitcher';
 export default function App({ Component, pageProps }) {
 	const { pathname } = useRouter();
 	const [path, setPath] = useState(pathname);
-	const [theme, setTheme] = useState('light');
+	const [theme, setTheme] = useState('dark');
 
 	return (
 		<>

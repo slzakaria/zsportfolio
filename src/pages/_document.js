@@ -22,7 +22,7 @@ export default function Document() {
 					/>
 				)}
 			</Head>
-			<body className='light'>
+			<body className='dark'>
 				<noscript
 					dangerouslySetInnerHTML={{
 						__html: `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5VN9RWGN"
