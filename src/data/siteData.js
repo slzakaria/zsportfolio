@@ -70,6 +70,14 @@ const siteData = {
 		},
 		{
 			id: uid(),
+			title: 'CICD labs',
+			description: 'My contribution to the prepare.sh labs',
+			linkText: 'View Project',
+			link: 'https://github.com/slzakaria/azurelabs',
+			featured: true,
+		},
+		{
+			id: uid(),
 			title: 'Terraform AWS template',
 			description: 'Provisioning starter for AWS resources using Terraform',
 			linkText: 'View Project',
