@@ -39,7 +39,7 @@
 	}
 
 	body.dark {
-		background-image: linear-gradient(to right, #000910 0%, black 100%);
+		background: #000910;
 	}
 
 	body.light {
