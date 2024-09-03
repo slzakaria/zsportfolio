@@ -36,7 +36,6 @@ jobs:
           images: ${{ secrets.DOCKER_USERNAME }}/zsportfolio
           tags: |
             type=raw,value=${{ env.BRANCH_NAME }}-latest
-            type=raw,value=latest,enable={{is_default_branch}}
 
       - name: Build and push Docker image
         uses: docker/build-push-action@v5
