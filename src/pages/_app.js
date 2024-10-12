@@ -33,7 +33,11 @@ export default function App({ Component, pageProps }) {
 				<link rel='apple-touch-icon' href='/apple-touch-icon.png' />
 				<link rel='manifest' href='/manifest.json' />
 				<meta name='robots' content='index, follow' />
-				<title>Zakaria Slimane - Software Developer DevOps & Cloud</title>
+				<meta
+					name='description'
+					content='Software developer specializing in JavaScript ES6, React, and Golang Based in Morocco. Crafting seamless, interactive web experiences, wordpress sites and shopify ecommerce sites. Excited about DevOps, Cloud Engineering, CI/CD automation, and AWS technologies.'
+				/>
+				<title>Zakaria Slimane | Software Developer DevOps & Cloud | Morocco (Maroc)</title>
 			</Head>
 
 			<Layout theme={theme} path={path} setPath={setPath}>
