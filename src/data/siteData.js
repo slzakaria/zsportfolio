@@ -97,7 +97,7 @@ const siteData = {
 			title: 'Pennysense Budget app',
 			description: 'Personal finance and budgeting app',
 			linkText: 'View Project',
-			link: 'https://budget.zakariaslimane.xyz/',
+			link: 'https://budgets.zakariaslimane.xyz/',
 			featured: true,
 		},
 		{
