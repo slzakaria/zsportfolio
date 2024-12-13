@@ -4,7 +4,7 @@ import Link from 'next/link';
 export function Work() {
 	return (
 		<section className='sm:my-20 my-12'>
-			<h2 className='sm:text-2xl text-xl font-jetBrain'>What i have been doing</h2>
+			<h2 className='sm:text-2xl text-xl font-jetBrain'>My career</h2>
 			<ul className='mt-5 flex flex-col gap-2'>
 				{WorkStore.map((work) => (
 					<li key={work.id} className='group font-jetBrain'>

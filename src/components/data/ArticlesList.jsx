@@ -14,7 +14,7 @@ export function ArticlesList() {
 							target='_blank'
 							href={article.link}
 							className='flex gap-5 items-center article--Link'>
-							<article className='w-full text-base sm:text-lg dark:text-white text-dark group-hover:text-limes group-hover:underline underline-offset-4 decoration-solid decoration-limes'>
+							<article className='sm:min-w-[400px] underline w-full text-base sm:text-lg dark:text-white text-dark group-hover:text-limes group-hover:underline underline-offset-4 decoration-solid decoration-limes'>
 								{article.title}
 							</article>
 							<FiChevronsRight className='w-4 h-4 cursor-pointer animate-flash group-hover:text-limes' />
