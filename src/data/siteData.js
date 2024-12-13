@@ -24,8 +24,13 @@ const siteData = {
 	articles: [
 		{
 			id: uid(),
+			title: 'How to deploy a static website / app in AWS.',
+			link: 'https://www.linkedin.com/pulse/how-deploy-static-website-react-app-aws-zakaria-slimane--vku9e/',
+		},
+		{
+			id: uid(),
 			title: 'Jenkins DevOps: EC2 Automated Builds and Docker Deployments',
-			link: 'https://www.linkedin.com/pulse/jenkins-devops-ec2-automated-builds-docker-zackaria-slimane--o59re',
+			link: 'https://www.linkedin.com/pulse/jenkins-devops-ec2-automated-builds-docker-zackaria-slimane--o59re/',
 		},
 		{
 			id: uid(),
