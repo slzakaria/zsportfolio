@@ -24,6 +24,11 @@ const siteData = {
 	articles: [
 		{
 			id: uid(),
+			title: 'AWS for newcomers: Essential Services to know.',
+			link: 'https://www.linkedin.com/pulse/aws-newcomers-essential-services-know-zakaria-slimane--fzswe/',
+		},
+		{
+			id: uid(),
 			title: 'How to deploy a static website / app in AWS.',
 			link: 'https://www.linkedin.com/pulse/how-deploy-static-website-react-app-aws-zakaria-slimane--vku9e/',
 		},
