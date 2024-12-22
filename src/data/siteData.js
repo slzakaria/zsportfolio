@@ -72,14 +72,6 @@ const siteData = {
 	projects: [
 		{
 			id: uid(),
-			title: 'Golang api template',
-			description: 'Basic starter of a Go API microservice dockerized',
-			linkText: 'View Project',
-			link: 'https://github.com/slzakaria/go-docker-ms',
-			featured: true,
-		},
-		{
-			id: uid(),
 			title: 'CICD labs',
 			description: 'My contribution to the prepare.sh labs',
 			linkText: 'View Project',
@@ -104,6 +96,14 @@ const siteData = {
 		},
 		{
 			id: uid(),
+			title: 'Golang-Docker api template',
+			description: 'Basic starter of a Go API microservice dockerized',
+			linkText: 'View Project',
+			link: 'https://github.com/slzakaria/go-docker-ms',
+			featured: true,
+		},
+		{
+			id: uid(),
 			title: 'Pennysense Budget app',
 			description: 'Personal finance and budgeting app',
 			linkText: 'View Project',
@@ -120,26 +120,26 @@ const siteData = {
 		},
 		{
 			id: uid(),
-			title: 'Bank product template',
-			description: 'Responsive & modern landing page for a Bank',
-			linkText: 'View Project',
-			link: 'https://echelonbank.vercel.app/',
-			featured: true,
-		},
-		{
-			id: uid(),
-			title: 'Agency Template',
-			description: 'Landing page for an agency',
-			linkText: 'View Project',
-			link: 'https://agency-templace.vercel.app/',
-			featured: false,
-		},
-		{
-			id: uid(),
 			title: 'Cvforge resume maker - Desktop app',
 			description: 'A resume maker.',
 			linkText: 'View Project',
 			link: 'https://cvforge.vercel.app/',
+			featured: true,
+		},
+		{
+			id: uid(),
+			title: 'Gittrackr issues tracker',
+			description: 'A docker GoLang REST API with React front',
+			linkText: 'View Project',
+			link: 'https://gittrackr.vercel.app/',
+			featured: true,
+		},
+		{
+			id: uid(),
+			title: 'Bank product template',
+			description: 'Responsive & modern landing page for a Bank',
+			linkText: 'View Project',
+			link: 'https://echelonbank.vercel.app/',
 			featured: true,
 		},
 		{
@@ -149,14 +149,6 @@ const siteData = {
 			linkText: 'View Project',
 			link: 'https://github.com/slzakaria/gotask',
 			featured: false,
-		},
-		{
-			id: uid(),
-			title: 'Gittrackr issues tracker',
-			description: 'A docker GoLang REST API with React front',
-			linkText: 'View Project',
-			link: 'https://gittrackr.vercel.app/',
-			featured: true,
 		},
 		{
 			id: uid(),
