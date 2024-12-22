@@ -16,25 +16,25 @@
 		"fast": "FAST_REFRESH=false next dev"
 	},
 	"dependencies": {
-		"@vercel/analytics": "^1.0",
+		"@vercel/analytics": "^1",
 		"@vercel/speed-insights": "^1",
-		"next": "14.2",
+		"next": "^14",
 		"react": "^18",
 		"react-dom": "^18",
 		"react-helmet": "^6.1",
 		"react-helmet-async": "^1.3",
 		"react-hot-toast": "^2.4",
 		"react-icons": "^4.10",
-		"react-infinite-logo-slider": "^1.0",
-		"react-text-transition": "^3.1",
-		"sharp": "^0.33",
-		"simplex-noise": "^4.0"
+		"react-infinite-logo-slider": "^1",
+		"react-text-transition": "^3",
+		"sharp": "^0",
+		"simplex-noise": "^4"
 	},
 	"devDependencies": {
 		"@tailwindcss/typography": "^0.5",
 		"autoprefixer": "^10",
 		"eslint": "^8",
-		"eslint-config-next": "14.2",
+		"eslint-config-next": "^14.2",
 		"eslint-plugin-react": "^7.32",
 		"eslint-plugin-react-hooks": "^4",
 		"eslint-plugin-react-refresh": "^0.4",
