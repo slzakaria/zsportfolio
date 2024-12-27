@@ -2,7 +2,7 @@ const SEO = [
 	{
 		page: 'home',
 		description:
-			'Moroccan Software developer specializing in JavaScript ES6, React, and Golang Based in Morocco. Crafting seamless, interactive web experiences, wordpress sites and shopify ecommerce sites. Excited about DevOps, Cloud Engineering, CI/CD automation, and AWS technologies.',
+			'Moroccan Software developer specializing in JavaScript ES6, React, and Golang Based in Morocco. Crafting seamless, interactive web experiences, wordpress sites and shopify ecommerce sites. Excited about DevOps, Cloud Engineering, CI/CD automation, and AWS solutions architect certified.',
 		keywords: [
 			'Zakaria slimane',
 			'Web developer',
@@ -18,6 +18,7 @@ const SEO = [
 			'Cloud Engineering',
 			'CI/CD automation',
 			'AWS cloud developer',
+			'AWS certified solutions architect',
 		],
 	},
 	{
@@ -39,6 +40,7 @@ const SEO = [
 			'Cloud Engineering',
 			'CI/CD automation',
 			'AWS cloud developer',
+			'AWS certified solutions architect',
 		],
 	},
 	{
@@ -60,6 +62,7 @@ const SEO = [
 			'Cloud Engineering',
 			'CI/CD automation',
 			'AWS cloud developer',
+			'AWS certified solutions architect',
 		],
 	},
 	{
@@ -81,6 +84,7 @@ const SEO = [
 			'Web developer Maroc',
 			'Developeur web Maroc',
 			'Wordpress shopify Maroc',
+			'AWS certified solutions architect',
 		],
 	},
 ];
