@@ -22,10 +22,10 @@ export default function App({ Component, pageProps }) {
 				<meta name='viewport' content='width=device-width, initial-scale=1' />
 				<meta name='theme-color' content='#000910' />
 				<meta name='og:image' content='/zs.png' />
-				<meta name='og:title' content='Zakaria Slimane Software Developer DevOps & cloud' />
+				<meta name='og:title' content='Zakaria SLIMANE Software Developer DevOps & cloud' />
 				<meta name='twitter:title' content='Zakaria SLIMANE - Software Developer' />
-				<meta name='og:description' content='Zakaria Slimane Software Developer DevOps & cloud' />
-				<meta name='description' content='Zakaria Slimane Software Developer DevOps & cloud' />
+				<meta name='og:description' content='Zakaria SLIMANE Software Developer DevOps & cloud' />
+				<meta name='description' content='Zakaria SLIMANE Software Developer DevOps & cloud' />
 				<meta
 					name='twitter:description'
 					content='Zakaria Slimane Software Developer DevOps & cloud'
@@ -35,9 +35,11 @@ export default function App({ Component, pageProps }) {
 				<meta name='robots' content='index, follow' />
 				<meta
 					name='description'
-					content='Software developer specializing in JavaScript ES6, React, and Golang Based in Morocco. Crafting seamless, interactive web experiences, wordpress sites and shopify ecommerce sites. Excited about DevOps, Cloud Engineering, CI/CD automation, and AWS technologies.'
+					content='Software developer specializing in JavaScript ES6, React, and Golang Based in Morocco. Crafting seamless, interactive web experiences, wordpress sites and shopify ecommerce sites. Excited about DevOps, Cloud Engineering, CI/CD automations. AWS certified solutions architect.'
 				/>
-				<title>Zakaria Slimane | Software Developer DevOps & Cloud | Morocco (Maroc)</title>
+				<title>
+					Zakaria Slimane | Software Developer , DevOps & Cloud AWS certified | Morocco (Maroc)
+				</title>
 			</Head>
 
 			<Layout theme={theme} path={path} setPath={setPath}>
