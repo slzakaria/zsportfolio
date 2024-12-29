@@ -25,10 +25,13 @@ export default function App({ Component, pageProps }) {
 				<meta name='og:title' content='Zakaria SLIMANE Software Developer DevOps & cloud' />
 				<meta name='twitter:title' content='Zakaria SLIMANE - Software Developer' />
 				<meta name='og:description' content='Zakaria SLIMANE Software Developer DevOps & cloud' />
-				<meta name='description' content='Zakaria SLIMANE Software Developer DevOps & cloud' />
+				<meta
+					name='description'
+					content='Zakaria SLIMANE Software Developer DevOps & cloud. AWS Certified'
+				/>
 				<meta
 					name='twitter:description'
-					content='Zakaria Slimane Software Developer DevOps & cloud'
+					content='Zakaria Slimane Software Developer DevOps & cloud. AWS Certified'
 				/>
 				<link rel='apple-touch-icon' href='/apple-touch-icon.png' />
 				<link rel='manifest' href='/manifest.json' />
@@ -37,9 +40,7 @@ export default function App({ Component, pageProps }) {
 					name='description'
 					content='Software developer specializing in JavaScript ES6, React, and Golang Based in Morocco. Crafting seamless, interactive web experiences, wordpress sites and shopify ecommerce sites. Excited about DevOps, Cloud Engineering, CI/CD automations. AWS certified solutions architect.'
 				/>
-				<title>
-					Zakaria Slimane | Software Developer , DevOps & Cloud AWS certified | Morocco (Maroc)
-				</title>
+				<title>Zakaria Slimane | Software Developer, DevOps & Cloud AWS certified | Morocco</title>
 			</Head>
 
 			<Layout theme={theme} path={path} setPath={setPath}>
