@@ -38,6 +38,6 @@ export const WorkStore = [
 		position: 'Frontend Developer',
 		from: 'September 2021',
 		to: 'May 2022.',
-		link: 'https://www.omniyat.ma/en/',
+		link: 'https://www.omniyat.ma/',
 	},
 ];
