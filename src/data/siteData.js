@@ -10,7 +10,7 @@ const siteData = {
 	socials: {
 		github: 'https://github.com/slzakaria',
 		linkedin: 'https://www.linkedin.com/in/zakaria-slimane/',
-		resume: 'https://drive.google.com/file/d/180no0yGGuPIUBdBD3SLdKeNPrT7t6j3L/view?usp=sharing',
+		resume: 'https://drive.google.com/file/d/11fT4DG9bc1wVZ1GaXIR5h53KnWdVe6Yh/view?usp=sharing',
 		email: 'slzackaria@gmail.com',
 	},
 
