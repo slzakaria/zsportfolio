@@ -10,6 +10,7 @@ export const Socials = memo(function Socials() {
 		<div className='sm:my-12 my-6 flex items-center'>
 			<div className='flex gap-5 justify-evenly w-full'>
 				<Link
+					target='_blank'
 					rel='nofollow'
 					href={siteData.socials.github}
 					className='p-2 text-limes hover:text-emerald-600 hover:scale-110 rounded-sm'>
@@ -17,6 +18,7 @@ export const Socials = memo(function Socials() {
 				</Link>
 				<Link
 					rel='nofollow'
+					target='_blank'
 					href={siteData.socials.linkedin}
 					className='p-2 text-limes hover:text-emerald-600 hover:scale-110 rounded-sm'>
 					<FiLinkedin className='h-6 w-6' />
@@ -29,6 +31,7 @@ export const Socials = memo(function Socials() {
 				</Link>
 				<Link
 					rel='nofollow'
+					target='_blank'
 					href={siteData.socials.resume}
 					className='p-2 text-limes hover:text-emerald-600 hover:scale-110 rounded-sm flex items-center gap-2'>
 					<FiFileText className='w-6 h-6' />
