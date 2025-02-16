@@ -27,11 +27,11 @@ export default function Home() {
 
 				<div className='container dark:text-white text-slate-900 font-jetBrain mt-14 text-pretty'>
 					<h1 className='text-xl sm:text-3xl'>
-						Self-driven developer with a focus on devOps practices and building <br />
-						<span className='text-limes font-jetBrain font-semibold'>
+						Self-driven developer with a focus on devOps practices and building{' '}
+						<span className='text-limes inline-flex'>
 							<TextRotation type='home' />
-							s.
 						</span>
+						s.
 					</h1>
 					<br></br>
 					<h2 className='sm:text-2xl text-xl font-jetBrain my-5'>About me </h2>

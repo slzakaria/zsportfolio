@@ -87,6 +87,28 @@ const SEO = [
 			'AWS certified solutions architect',
 		],
 	},
+	{
+		page: 'blog',
+		description:
+			'Technical deep dives, tutorials, and insights into software development, DevOps practices, cloud architecture, and modern web technologies. Learn from hands-on experiences and practical examples.',
+		keywords: [
+			'Software development blog',
+			'Technical tutorials',
+			'DevOps practices',
+			'Cloud architecture',
+			'Web development insights',
+			'Coding tutorials',
+			'AWS tutorials',
+			'React development',
+			'Golang tutorials',
+			'Development best practices',
+			'Software architecture',
+			'Technical writing',
+			'Developer blog',
+			'Programming tutorials',
+			'Cloud computing',
+		],
+	},
 ];
 
 export default SEO;

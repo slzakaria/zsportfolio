@@ -167,6 +167,54 @@ const siteData = {
 			featured: false,
 		},
 	],
+
+	blogPosts: [
+		{
+			id: uid(),
+			title: 'AWS for newcomers: Essential Services to know',
+			slug: 'aws-for-newcomers',
+			date: '2024-12-13',
+			excerpt:
+				'A comprehensive guide to help beginners understand and start using AWS services effectively.',
+			tags: ['AWS', 'Cloud', 'Tutorial'],
+		},
+		{
+			id: uid(),
+			title: 'How to deploy a static website / app in AWS',
+			slug: 'how-to-deploy-static-websites-aws',
+			date: '2024-12-13',
+			excerpt:
+				'Learn how to deploy a static website on AWS using S3, configure static hosting, and optimize with CloudFront.',
+			tags: ['AWS', 'Cloud', 'Tutorial'],
+		},
+		{
+			id: uid(),
+			title: 'CI/CD Workflow with Jenkins, Docker, and AWS EC2',
+			slug: 'cicd-workflow-jenkins-docker-aws',
+			date: '2024-01-15',
+			excerpt:
+				'Learn how to automate your deployment pipeline using Jenkins, Docker, and AWS EC2 for seamless CI/CD integration.',
+			tags: ['CI/CD', 'Jenkins', 'AWS', 'Docker', 'DevOps'],
+		},
+		{
+			id: uid(),
+			title: 'Automating Infrastructure Deployment with Terraform (AWS example)',
+			slug: 'manage-and-deploy-cloud-infrastructure-with-code-terraform',
+			date: '2024-01-13',
+			excerpt:
+				'Learn how to set up and configure AWS infrastructure using Terraform, including EC2 instances, security groups, and automation.',
+			tags: ['AWS', 'Cloud', 'DevOps', 'IaC', 'Terraform'],
+		},
+		{
+			id: uid(),
+			title: 'Brief overview : AWS EC2 Instance Setup and Secure CI/CD Pipeline with Jenkins',
+			slug: 'overview-of-full-cicd-setup-aws-ec2-jenkins',
+			date: '2023-10-19',
+			excerpt:
+				'Learn how to set up and configure AWS EC2 instances, install Jenkins, and build a secure and efficient CI/CD pipeline for a React side project.',
+			tags: ['AWS', 'Cloud', 'DevOps', 'CI/CD', 'Jenkins', 'React'],
+		},
+	],
 };
 
 export default siteData;

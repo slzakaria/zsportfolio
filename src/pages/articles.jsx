@@ -22,8 +22,8 @@ export default function Articles() {
 			<section className='mt-14 dark:text-white text-dark font-jetBrain'>
 				<div className='mb-5'>
 					<h1 className='text-xl sm:text-3xl'>
-						I write about {''}
-						<span className='text-limes'>
+						I write about{' '}
+						<span className='text-limes inline-flex'>
 							<TextRotation type='articles' />
 						</span>
 						<br />

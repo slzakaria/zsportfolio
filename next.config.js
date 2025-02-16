@@ -1,3 +1,13 @@
+// next.config.js
+
+const withMDX = require('@next/mdx')({
+	extension: /\.mdx?$/,
+	options: {
+		remarkPlugins: [],
+		rehypePlugins: [],
+	},
+});
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
 	reactStrictMode: true,
@@ -7,6 +17,7 @@ const nextConfig = {
 		buildActivity: true,
 		buildActivityPosition: 'bottom-right',
 	},
+	pageExtensions: ['js', 'jsx', 'mdx'],
 };
 
-export default nextConfig;
+module.exports = withMDX(nextConfig);
