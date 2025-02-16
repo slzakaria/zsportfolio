@@ -1,0 +1,82 @@
+---
+title: 'How to Deploy a Static Website or App on AWS'
+date: '2024-12-13'
+excerpt: 'Learn how to deploy a static website on AWS using S3, configure static hosting, and optimize with CloudFront.'
+coverImage: ''
+tags: ['AWS', 'Cloud', 'Tutorial']
+---
+
+Deploying a website or app on Amazon Web Services (AWS) provides a reliable and scalable platform for your application. With AWS’s global infrastructure, your app can perform optimally and remain accessible to users worldwide. This guide walks you through the steps to deploy a static website or app on AWS seamlessly.
+
+## Why Use S3 for Hosting?
+
+Instead of using an EC2 instance, we will deploy a static site on an S3 bucket. This is a cost-effective and scalable way to host static assets.
+
+## Prerequisites
+
+- An AWS account
+- An existing app or website
+- AWS CLI installed and configured
+
+---
+
+## Step 1: Create an S3 Bucket
+
+Amazon S3 is a versatile object storage service that can be used for hosting static websites. To set it up:
+
+1. Log in to your AWS account.
+2. Navigate to **S3** and click **Create bucket**.
+3. Enter a unique bucket name and select a region.
+   - Bucket names must be globally unique, so if you get an error, try adding numbers to the name.
+4. Disable the **Block all public access** option to make your site publicly accessible.
+   - (For security, use IAM roles in production, but for static hosting, public access is required.)
+5. Click **Create** to finalize.
+
+---
+
+## Step 2: Upload Build Files to S3 Bucket
+
+Once your bucket is ready, upload your app’s files:
+
+1. Open your terminal and navigate to your project’s build folder.
+2. Run the following command to sync your files with S3:
+   ```sh
+   aws s3 sync build/ s3://<your-bucket-name>/
+   ```
+   Replace `<your-bucket-name>` with your actual S3 bucket name.
+
+---
+
+## Step 3: Configure S3 Bucket for Static Hosting
+
+Enable static website hosting for your bucket:
+
+1. Open your bucket in the S3 console and go to the **Properties** tab.
+2. In the **Static website hosting** section, enable hosting.
+3. Set `index.html` as the index document and optionally set `error.html` as the error document.
+4. Save the changes.
+
+---
+
+## Step 4: Associate a Domain Name (Optional)
+
+To make your app accessible via a custom domain:
+
+1. Use **AWS Route 53** or another DNS provider to register a domain name.
+2. Configure the domain to point to your S3 bucket.
+
+---
+
+## Step 5: Enable CloudFront CDN (Optional)
+
+Improve performance by using AWS **CloudFront** for content delivery:
+
+1. In the AWS Management Console, navigate to **CloudFront** and create a new distribution.
+2. Set your S3 bucket as the origin.
+3. Configure caching and security settings as needed.
+
+---
+
+## Conclusion
+
+Congratulations! Your static website or app is now deployed on AWS using S3 for hosting. This setup ensures your app is fast, reliable, and accessible worldwide. Optional steps like adding a custom domain or enabling a CDN can further enhance the user experience.

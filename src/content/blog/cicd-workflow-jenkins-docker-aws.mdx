@@ -1,0 +1,100 @@
+---
+title: 'CI/CD Workflow with Jenkins, Docker, and AWS EC2'
+date: '2024-01-15'
+excerpt: 'Learn how to automate your deployment pipeline using Jenkins, Docker, and AWS EC2 for seamless CI/CD integration.'
+coverImage: ''
+tags: ['CI/CD', 'Jenkins', 'AWS', 'Docker', 'DevOps']
+---
+
+# CI/CD Workflow with Jenkins, Docker, and AWS EC2
+
+Continuous Integration and Continuous Deployment (CI/CD) workflows have transformed the way we write and ship code. This guide explores how to configure a Jenkins server to fetch the latest code changes from a Git repository using webhooks, build Docker images, and run application containers on an AWS EC2 instance.
+
+## Prerequisites
+
+- AWS free-tier account (or another cloud provider with minor adjustments)
+- GitHub repository (front-end or back-end code)
+- Basic familiarity with Linux commands and Bash scripting
+
+## Server Setup: EC2 Instance
+
+For this article, an AWS EC2 instance will be used to host the Jenkins server and run Docker containers. However, the steps are applicable to other cloud providers or even physical servers.
+
+Instead of manually provisioning servers via the AWS UI, Terraform can be used. Example Terraform configuration is available here: **[Terraform Code - GitHub]**
+
+## Setting Up GitHub SSH Key
+
+To automate code fetching and building:
+
+1. Connect to the EC2 instance and generate an SSH key:
+   ```bash
+   ssh-keygen
+   ```
+2. Display the public key:
+   ```bash
+   cat /home/ubuntu/.ssh/id_rsa.pub
+   ```
+3. Copy and add the public key to **GitHub Settings > SSH and GPG Keys** as an authentication key.
+
+## Jenkins Server Configuration
+
+After launching the EC2 instance, install the required tools:
+
+- Jenkins (on Ubuntu 22.04)
+- Git, Node.js, and npm
+- Docker
+
+> **Note:** Pre-configured installation scripts are available here: **[Automated Tools Install Script]**
+
+### Accessing Jenkins
+
+Ensure port 8080 is open, then access Jenkins via:
+
+```
+http://instance.public_ip:8080
+```
+
+Set up an admin user, install recommended plugins, and proceed to the dashboard.
+
+### Configuring a Jenkins Pipeline
+
+1. Create a **Freestyle Jenkins Pipeline** and add the GitHub repository.
+2. Set **Git credentials** using the SSH private key:
+   ```bash
+   cat /home/ubuntu/.ssh/id_rsa
+   ```
+3. Go to **Jenkins Dashboard > Manage Jenkins > Credentials**, and add an SSH private key.
+
+## Automating Docker Build and Deployment
+
+Instead of manually running Docker commands, automate the process within Jenkins:
+
+```bash
+#!/bin/bash
+docker rm -f $(docker ps -aq)
+docker build -t yourappname .
+docker run -d --name yourappname -p PORT:PORT yourappname:latest
+echo "Built and ran project on port ...."
+```
+
+Run the pipeline and verify that the application is accessible at:
+
+```
+http://instance.public_ip:PORT
+```
+
+## Setting Up GitHub Webhook
+
+To fully automate deployment:
+
+1. Install the **GitHub Integration Plugin** in Jenkins.
+2. Enable **GitHub hook trigger for GIT SCM polling** in the pipeline configuration.
+3. Add a webhook in **GitHub Repo Settings > Webhooks** with the following payload URL:
+   ```
+   http://instance.public_ip:8080/github-webhook
+   ```
+4. Save the webhook and push changes to the repository to test automation.
+
+## Conclusion
+
+By implementing this CI/CD workflow, code changes are automatically fetched, built into Docker images, and deployed on an EC2 instance. This ensures efficient, reliable, and automated software delivery, improving both development speed and operational stability.

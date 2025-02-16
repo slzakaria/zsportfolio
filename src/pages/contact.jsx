@@ -72,11 +72,11 @@ export default function Contact() {
 
 			<section id='contact' className='mt-14 dark:text-white text-dark font-jetBrain'>
 				<h1 className='text-xl sm:text-3xl'>
-					Get in Touch and let&apos;s turn Ideas <br />
-					into
-					<span className='text-limes pl-1'>
-						<TextRotation type='contact' />.
+					Get in Touch and let&apos;s turn Ideas{' '}
+					<span className='text-limes inline-flex'>
+						<TextRotation type='contact' />
 					</span>
+					.
 				</h1>
 				<p className='mt-6 font-jetBrain text-pretty text-lg'>{siteData.contactPage.description}</p>
 				<p className='mt-6 font-jetBrain text-balance text-lg'>{siteData.contactPage.cta}</p>

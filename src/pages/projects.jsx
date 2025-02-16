@@ -23,8 +23,8 @@ export default function Projects() {
 			<section className='mt-14 dark:text-white text-dark font-jetBrain'>
 				<div className='mb-5'>
 					<h1 className='text-xl sm:text-3xl'>
-						Problem solving, <br className='sm:hidden' /> one{' '}
-						<span className='text-limes'>
+						Problem solving, one{' '}
+						<span className='text-limes inline-flex'>
 							<TextRotation type='projects' />
 						</span>{' '}
 						at a time.

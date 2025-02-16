@@ -4,7 +4,14 @@ import logowhite from '@/assets/logos/logowhite.png';
 import logodark from '@/assets/logos/logoblack.png';
 
 export function Header({ theme, active, setPath }) {
-	const pages = ['/', '/projects', '/articles', '/contact'];
+	const pages = [
+		{ path: '/', label: '~/home' },
+		{ path: '/projects', label: '/projects' },
+		{ path: '/articles', label: '/articles' },
+		{ path: '/blog', label: '/blog' },
+		{ path: '/contact', label: '/contact' }
+	];
+
 	return (
 		<>
 			<header className='sm:mt-5 flex container gap-10 flex-col items-center justify-between font-jetBrain'>
@@ -34,16 +41,16 @@ export function Header({ theme, active, setPath }) {
 				</div>
 				<nav className='font-jetBrain container'>
 					<ul className='flex gap-5 justify-evenly'>
-						{pages.map((page, index) => (
-							<li key={page}>
+						{pages.map(({ path, label }) => (
+							<li key={path}>
 								<Link
-									onClick={() => setPath(page)}
-									href={page}
-									title={`${page} | Zakaria slimane - software developer`}
+									onClick={() => setPath(path)}
+									href={path}
+									title={`${label} | Zakaria slimane - software developer`}
 									className={`font-jetBrain text-sm sm:text-base hover:underline decoration-solid underline-offset-4 ${
-										active === page ? 'underline decoration-rose-500' : 'decoration-limes'
+										active === path ? 'underline decoration-rose-500' : 'decoration-limes'
 									}`}>
-									{page === '/' ? '~/home' : page}
+									{label}
 								</Link>
 							</li>
 						))}

@@ -1,0 +1,182 @@
+---
+title: 'Deploying AWS Resources with Terraform'
+date: '2024-01-13'
+excerpt: 'Learn how to set up and configure AWS infrastructure using Terraform, including EC2 instances, security groups, and automation.'
+coverImage: ''
+tags: ['AWS', 'Cloud', 'DevOps', 'IaC', 'Terraform']
+---
+
+## Introduction
+
+As part of my journey embracing DevOps culture and tools, Terraform and its companions in the realm of Infrastructure as Code (IaC) naturally became integral waypoints on my roadmap. Embracing the principles of DevOps involves not just a mindset shift but also a strategic adoption of tools that enhance efficiency, scalability, and reproducibility.
+
+Let's dive in and deploy some resources to AWS using Terraform.
+
+## Prerequisites
+
+- An AWS account, AWS CLI, and configured credentials (`aws configure`)
+- Terraform installed in your local environment
+
+---
+
+## Terraform Code - `main.tf` File
+
+### Provider Configuration
+
+We start by defining the required AWS provider and setting the region:
+
+```hcl
+terraform {
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+    }
+  }
+}
+
+provider "aws" {
+  region = "Enter-your-region-here"
+}
+```
+
+### Setup and Configure the EC2 Instance
+
+Define the AWS EC2 instance with configurations such as AMI, instance type, and key name:
+
+```hcl
+resource "aws_instance" "your_instance_name" {
+  ami                    = "ami-0505148b3591e4c07" # Ubuntu AMI ID
+  instance_type          = "t2.micro"
+  key_name               = var.ssh_key_name
+  vpc_security_group_ids = [aws_security_group.sg.id]
+
+  tags = {
+    Name = var.prefix
+  }
+
+  user_data = data.template_file.userdata.rendered
+
+  connection {
+    type        = "ssh"
+    user        = "ec2-user"
+    private_key = file(var.ssh_private_key)
+    host        = self.public_ip
+  }
+
+  provisioner "file" {
+    source      = "~/setup.sh"
+    destination = "/tmp/setup.sh"
+  }
+
+  provisioner "remote-exec" {
+    inline = [
+      "chmod +x /tmp/setup.sh",
+      "sudo /tmp/setup.sh",
+    ]
+  }
+}
+```
+
+---
+
+## Creating a Security Group
+
+A security group is created to manage inbound and outbound traffic:
+
+```hcl
+locals {
+  ingress_ports = [22, 8080, 9000, 3000, 3306, 5137, 443]
+}
+
+resource "aws_security_group" "sg" {
+  name = "${var.prefix}-sg"
+
+  dynamic "ingress" {
+    for_each = local.ingress_ports
+    iterator = port
+    content {
+      from_port   = port.value
+      protocol    = "tcp"
+      to_port     = port.value
+      cidr_blocks = ["0.0.0.0/0"]
+    }
+  }
+
+  egress {
+    from_port   = 0
+    protocol    = -1
+    to_port     = 0
+    cidr_blocks = ["0.0.0.0/0"]
+  }
+}
+```
+
+---
+
+## Optional: Running a Startup Script
+
+```hcl
+data "template_file" "userdata" {
+  template = file("${abspath(path.module)}/setup.sh")
+}
+```
+
+---
+
+## `variables.tf` File
+
+Always follow security best practices when handling credentials. Here’s an example of variable setup:
+
+```hcl
+variable "prefix" {
+  default = "your-instance-name"
+}
+
+variable "ssh_key_name" {
+  default = "your-keypair-name"
+}
+
+variable "ssh_private_key" {
+  description = "Path to the SSH private key file"
+  type        = string
+  default     = "/path/to/keypair.pem"
+}
+```
+
+---
+
+## `outputs.tf` File
+
+Define outputs to display useful connection details after provisioning:
+
+```hcl
+output "SSH_Command" {
+  value = "ssh -i ${var.ssh_private_key} ec2-user@${aws_instance.your_instance_name.public_ip}"
+}
+```
+
+---
+
+## Running Terraform Commands
+
+```sh
+terraform init
+terraform plan -out main.plan
+terraform apply "main.plan"
+
+# Destroy resources when finished
+terraform destroy
+```
+
+---
+
+## Conclusion
+
+Terraform makes setting up AWS instances a breeze. No more manual configurations—let Terraform handle the heavy lifting, so you can focus on building your applications.
+
+### Further Learning:
+
+- [Terraform Documentation](https://developer.hashicorp.com/terraform/docs)
+- [AWS Provider - Terraform](https://registry.terraform.io/providers/hashicorp/aws/latest/docs)
+
+#devops #aws #iac #terraform
