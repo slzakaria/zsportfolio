@@ -1,15 +1,23 @@
+// next.config.js
+
 const withMDX = require('@next/mdx')({
-  extension: /\.mdx?$/,
-  options: {
-    remarkPlugins: [],
-    rehypePlugins: [],
-  },
+	extension: /\.mdx?$/,
+	options: {
+		remarkPlugins: [],
+		rehypePlugins: [],
+	},
 });
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
-  pageExtensions: ['js', 'jsx', 'mdx'],
+	reactStrictMode: true,
+	poweredByHeader: false,
+	output: 'standalone',
+	devIndicators: {
+		buildActivity: true,
+		buildActivityPosition: 'bottom-right',
+	},
+	pageExtensions: ['js', 'jsx', 'mdx'],
 };
 
 module.exports = withMDX(nextConfig);
