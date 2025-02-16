@@ -9,7 +9,7 @@ export function Header({ theme, active, setPath }) {
 		{ path: '/projects', label: '/projects' },
 		{ path: '/articles', label: '/articles' },
 		{ path: '/blog', label: '/blog' },
-		{ path: '/contact', label: '/contact' }
+		{ path: '/contact', label: '/contact' },
 	];
 
 	return (
@@ -40,7 +40,7 @@ export function Header({ theme, active, setPath }) {
 					</div>
 				</div>
 				<nav className='font-jetBrain container'>
-					<ul className='flex gap-5 justify-evenly'>
+					<ul className='flex flex-wrap gap-5 justify-evenly'>
 						{pages.map(({ path, label }) => (
 							<li key={path}>
 								<Link
