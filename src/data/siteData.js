@@ -72,6 +72,14 @@ const siteData = {
 	projects: [
 		{
 			id: uid(),
+			title: 'Fin tracker',
+			description: 'Personal Finance Management',
+			linkText: 'View Project',
+			link: 'https://fintracker.zakariaslimane.xyz/',
+			featured: true,
+		},
+		{
+			id: uid(),
 			title: 'CICD labs',
 			description: 'My contribution to the prepare.sh labs',
 			linkText: 'View Project',
