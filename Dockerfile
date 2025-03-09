@@ -1,31 +1,48 @@
-# Build stage
-FROM node:alpine3.21 AS builder
+FROM node:18-alpine AS base
 
+FROM base AS deps
+RUN apk add --no-cache libc6-compat
 WORKDIR /app
-COPY package*.json ./
-RUN npm ci
+
+COPY package.json yarn.lock* package-lock.json* pnpm-lock.yaml* .npmrc* ./
+RUN \
+	if [ -f yarn.lock ]; then yarn --frozen-lockfile; \
+	elif [ -f package-lock.json ]; then npm ci; \
+	elif [ -f pnpm-lock.yaml ]; then corepack enable pnpm && pnpm i --frozen-lockfile; \
+	else echo "Lockfile not found." && exit 1; \
+	fi
+
+FROM base AS builder
+WORKDIR /app
+COPY --from=deps /app/node_modules ./node_modules
 COPY . .
 
-# Build the application
-RUN npm run build
+ENV NEXT_TELEMETRY_DISABLED=1
+RUN \
+	if [ -f yarn.lock ]; then yarn run build; \
+	elif [ -f package-lock.json ]; then npm run build; \
+	elif [ -f pnpm-lock.yaml ]; then corepack enable pnpm && pnpm run build; \
+	else echo "Lockfile not found." && exit 1; \
+	fi
 
-# Production stage
-FROM node:20-alpine AS runner
-
+FROM base AS runner
 WORKDIR /app
 
-# Install only production dependencies
-COPY package*.json ./
-RUN npm ci --only=production && npm cache clean --force
+ENV NODE_ENV=production
+ENV NEXT_TELEMETRY_DISABLED=1
 
-# Copy necessary files from builder stage
+RUN addgroup --system --gid 1001 nodejs
+RUN adduser --system --uid 1001 nextjs
+
 COPY --from=builder /app/public ./public
-COPY --from=builder /app/.next/standalone ./
-COPY --from=builder /app/.next/static ./.next/static
+COPY --from=builder --chown=nextjs:nodejs /app/.next/standalone ./
+COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
 
-# Create a non-root user and switch to it
-RUN addgroup -g 1001 -S nodejs && adduser -S nextjs -u 1001
 USER nextjs
 
 EXPOSE 3000
+
+ENV PORT=3000
+
+ENV HOSTNAME="0.0.0.0"
 CMD ["node", "server.js"]
